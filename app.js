@@ -57,15 +57,12 @@ function closePanel() {
   panel.setAttribute("aria-hidden", "true");
 }
 
-function toPublicURL(src) {
-  // "assets/..." gelirse "/assets/..." yap
-  // zaten "http..." veya "/assets..." ise dokunma
-  if (!src) return "";
-  if (src.startsWith("http")) return src;
-  if (src.startsWith("/")) return src;
-  return "/" + src.replace(/^\.?\//, "");
-}
 
+function toPublicURL(src) {
+  if (!src) return "";
+  return new URL(src, document.baseURI).toString();
+
+}
 
 
 function renderPlaceHTML(p) {
