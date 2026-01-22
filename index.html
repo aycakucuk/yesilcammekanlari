@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yeşilçam Mekanları</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #map { height: 100%; }
+
+
+     .map-header{
+  position: fixed;
+  top: 16px;
+  right: 150px;
+  z-index: 2600;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  padding: 10px 14px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  max-width: 320px;
+}
+
+.map-title{
+  font: 600 14px system-ui, -apple-system, Segoe UI, Roboto;
+  margin-bottom: 4px;
+}
+
+.map-sub{
+  font: 400 12px system-ui, -apple-system, Segoe UI, Roboto;
+  color: #555;
+}
+
+
+    /* Search bar */
+    .search-wrap{
+      position: fixed;
+      top: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2500;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(6px);
+      padding: 10px;
+      border-radius: 14px;
+      box-shadow: 0 10px 24px rgba(0,0,0,.18);
+    }
+
+    #tagSearch{
+      width: min(520px, calc(100vw - 160px));
+      padding: 10px 12px;
+      border: 1px solid #e5e5e5;
+      border-radius: 12px;
+      outline: none;
+      font: 500 14px system-ui, -apple-system, Segoe UI, Roboto;
+    }
+
+    #tagBtn{
+      padding: 10px 12px;
+      border: 0;
+      border-radius: 12px;
+      cursor: pointer;
+      background: #037f54;
+      color: #fff;
+      font: 600 14px system-ui, -apple-system, Segoe UI, Roboto;
+    }
+
+    .search-results{
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      right: 0;
+      display: none;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 24px rgba(0,0,0,.12);
+    }
+    .search-results.open{ display:block; }
+
+    .search-item{
+      padding: 10px 12px;
+      cursor: pointer;
+      font: 500 14px system-ui, -apple-system, Segoe UI, Roboto;
+      border-bottom: 1px solid #f2f2f2;
+    }
+    .search-item:last-child{ border-bottom: 0; }
+    .search-item:hover{ background:#f7f7ff; }
+    .search-sub{
+      display:block;
+      margin-top: 4px;
+      color:#666;
+      font: 400 12px system-ui, -apple-system, Segoe UI, Roboto;
+    }
+
+    /* Modal overlay */
+    .overlay {
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.35);
+      display: none;
+      z-index: 1500;
+    }
+    .overlay.open { display: block; }
+
+    /* Side panel */
+    .panel {
+      position: fixed;
+      top: 24px; left: 24px;
+      width: min(420px, calc(100% - 48px));
+      max-height: calc(100% - 48px);
+      overflow: auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 12px 36px rgba(0,0,0,.25);
+      z-index: 2000;
+      display: none;
+    }
+    .panel.open { display: block; }
+
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 14px 10px;
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+    }
+
+    .title { font: 600 18px/1.2 system-ui, -apple-system, Segoe UI, Roboto; margin: 0; }
+    .close-btn {
+      border: 0; background: #f2f2f2;
+      width: 36px; height: 36px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 18px;
+    }
+
+    .content { padding: 14px; }
+
+    .meta {
+      font: 500 12px/1.2 system-ui, -apple-system, Segoe UI, Roboto;
+      color: #666;
+      margin: 0 0 10px;
+    }
+
+    .desc {
+      font: 400 14px/1.55 system-ui, -apple-system, Segoe UI, Roboto;
+      color: #222;
+      margin: 0 0 14px;
+    }
+
+    .section-title {
+      font: 700 12px/1.2 system-ui, -apple-system, Segoe UI, Roboto;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #444;
+      margin: 18px 0 10px;
+    }
+
+    /* Image grids */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    .imgbox {
+      width: 100%;
+      aspect-ratio: 4/3;
+      border-radius: 12px;
+      background: #f4f4f4;
+      overflow: hidden;
+      border: 1px solid #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #999;
+      font: 500 12px system-ui, -apple-system, Segoe UI, Roboto;
+    }
+    .imgbox img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Chips (tags) */
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip {
+      font: 600 12px/1 system-ui, -apple-system, Segoe UI, Roboto;
+      padding: 8px 10px;
+      border-radius: 999px;
+      background: #f3f6ff;
+      color: #173b9b;
+      border: 1px solid #dbe4ff;
+      cursor: pointer;
+    }
+
+    /* Layer control always on top */
+    .leaflet-top.leaflet-right { z-index: 2400; }
+
+    /* Legend */
+.map-legend {
+  background: rgba(255,255,255,.95);
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 12px 14px;
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+  font: 500 12px system-ui, -apple-system, Segoe UI, Roboto;
+  color: #222;
+}
+
+.legend-title {
+  font: 700 12px system-ui, -apple-system, Segoe UI, Roboto;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15);
+}
+
+.legend-label {
+  white-space: nowrap;
+}
+
+/* === INFO (minimal) === */
+.infoBtn{
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,0,0,.25);
+  background: rgba(255,255,255,.65);
+  backdrop-filter: blur(6px);
+  color: rgba(0,0,0,.65);
+  font: 700 13px/1 system-ui, -apple-system, Segoe UI, Roboto;
+  cursor: pointer;
+  z-index: 4000;
+}
+.infoBtn:hover{ background: rgba(255,255,255,.9); }
+
+.infoBox{
+  position: fixed;
+  left: 16px;
+  bottom: 52px;
+  width: min(360px, calc(100vw - 32px));
+  max-height: 55vh;
+  overflow: auto;
+  display: none;
+  z-index: 4000;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+.infoBox.open{ display:block; }
+
+.infoTop{
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 10px 8px;
+  background: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+}
+.infoTitle{
+  font: 800 12px/1.2 system-ui, -apple-system, Segoe UI, Roboto;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #333;
+}
+.infoClose{
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  border: 0;
+  background: #f2f2f2;
+  cursor: pointer;
+  font-size: 16px;
+}
+.infoList{
+  margin: 0;
+  padding: 10px 16px 14px 28px;
+  font: 400 13px/1.55 system-ui, -apple-system, Segoe UI, Roboto;
+  color: #222;
+}
+.infoList li{ margin-bottom: 8px; }
+/*info*/
+
+
+
+/* MOBİL */
+@media (max-width: 768px) {
+
+  /* harita üstündeki paneller */
+  .panel,
+  .infoBox,
+  .legend {
+    width: calc(100% - 20px);
+    max-width: none;
+    left: 10px;
+    right: 10px;
+  }
+
+  /* lejant */
+  .legend {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  /* sidebar / bilgi paneli */
+  .panel {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    height: 40vh;
+    overflow-y: auto;
+    border-radius: 12px 12px 0 0;
+  }
+
+  /* arama alanı */
+  .search-wrap {
+    width: calc(100% - 20px);
+    left: 10px;
+  }
+}
+
+
+  </style>
+</head>
+
+<body>
+
+    <div class="map-header">
+  <div class="map-title">Yeşilçam Mekânları Haritası</div>
+  <div class="map-sub">
+    1960–1980 arası Türk sinemasında kullanılan İstanbul mekanlarının haritalanması
+  </div>
+</div>
+
+
+  <!-- Search -->
+  <div class="search-wrap">
+    <input id="tagSearch" type="text" placeholder="Mekan veya film ara… (örn: bebek parkı, akm, şoför nebahat, İstanbul 79...)" />
+    <button id="tagBtn" type="button">Ara</button>
+    <div id="tagResults" class="search-results"></div>
+  </div>
+
+  <div id="map"></div>
+
+   <!-- INFO: küçük gri buton + kaynakça kutusu -->
+<button id="infoBtn" class="infoBtn" type="button" aria-label="Kaynakça">i</button>
+
+<aside id="infoBox" class="infoBox" aria-hidden="true">
+  <div class="infoTop">
+    <div class="infoTitle">Kaynakça</div>
+    <button id="infoClose" class="infoClose" type="button" aria-label="Kapat">×</button>
+  </div>
+
+  <ol class="infoList">
+    <li>Altun, D. &amp; Uzun, İ. (2012). Yeşilçam Sineması’nda Mekan Kullanımı. <em>Mimarlık</em>, (366), 50–55.</li>
+    <li>Bulunmaz, B. &amp; Osmanoğlu, Ö. (2016). <em>Yeşilçam Sinemasında İstanbul: Değişen Kültür ve Toplumsal Yaşam</em>. İstanbul: İBB Kültür Yayınları.</li>
+    <li>Tulum, H. (2023). Türk Sineması’nın İç Mekanları: 1960–1980 Aralığına Dair Bir Okuma. <em>Mimarlık ve Yaşam</em>, 8(1), 21–43.</li>
+    <li>Şumnu, U. (Ed.). (2023). <em>Başrolde mimarlık: Yeşilçam filmlerinde mekan ve modernite</em>. Everest Yayınları.</li>
+  </ol>
+</aside>
+
+  <!-- overlay + panel -->
+  <div id="overlay" class="overlay"></div>
+
+  <aside id="panel" class="panel" aria-hidden="true">
+    <div class="panel-header">
+      <h2 id="panelTitle" class="title">Mekan</h2>
+      <button id="closeBtn" class="close-btn" aria-label="Kapat">×</button>
+    </div>
+    <div class="content" id="panelContent"></div>
+  </aside>
+
+  
+  
+
+  
+</body>
+</html>
+
+<script src="./places.js"></script>
+<script src="./app.js"></script>
+
+
