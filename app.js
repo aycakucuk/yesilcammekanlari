@@ -66,15 +66,10 @@ function toPublicURL(src) {
   return "/" + src.replace(/^\.?\//, "");
 }
 
-function imgOrPlaceholder(src) {
-  const url = toPublicURL(src);
-  if (!url) return `<div class="imgbox">Görsel</div>`;
-  return `
-    <div class="imgbox">
-      <img src="${url}" alt="" loading="lazy"
-        onerror="this.closest('.imgbox').innerHTML='Görsel';" />
-    </div>
-  `;
+function toPublicURL(src) {
+  if (!src) return "";
+  return new URL(src, document.baseURI).toString();
+
 }
 
 
