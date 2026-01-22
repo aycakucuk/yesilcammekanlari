@@ -66,11 +66,6 @@ function toPublicURL(src) {
   return "/" + src.replace(/^\.?\//, "");
 }
 
-function toPublicURL(src) {
-  if (!src) return "";
-  return new URL(src, document.baseURI).toString();
-
-}
 
 
 function renderPlaceHTML(p) {
