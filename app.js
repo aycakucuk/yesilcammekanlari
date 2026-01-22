@@ -1,4 +1,7 @@
 // app.js
+function assetUrl(path) {
+  return new URL(path, document.baseURI).toString();
+}
 
 // ----- helpers -----
 function toSafeHTML(text) {
