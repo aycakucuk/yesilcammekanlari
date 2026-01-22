@@ -324,104 +324,69 @@
 
 
 
-
-/* =========================
-   MOBİL (RESET + FIX)
-   ========================= */
 @media (max-width: 768px) {
 
-  /* 0) Genel */
-  html, body { overflow: hidden; }
+  /* SEARCH: sayfadaki ilk input+buton grubunu sabitle (senin bar) */
+  .search-wrap,
+  .search-bar,
+  .search,
+  #search,
+  header .search-wrap {
+    position: fixed !important;
+    top: 86px !important;   /* başlığın altı */
+    left: 12px !important;
+    right: 12px !important;
+    z-index: 99999 !important;
 
-  /* 1) Arama çubuğu: başlığın altına + hafif şeffaf */
-  .search-wrap{
-    position: fixed;
-    top: 76px;                 /* başlık kartının altına gelsin (gerekirse 64/88 oyna) */
-    left: 12px;
-    right: 12px;
-    z-index: 9999;
-    pointer-events: auto;
-
-    background: rgba(255,255,255,0.86);
-    border: 1px solid rgba(0,0,0,0.10);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 14px;
+    background: rgba(255,255,255,0.80) !important;
+    border: 1px solid rgba(0,0,0,0.14) !important;
+    border-radius: 14px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
   }
 
   .search-wrap input,
   .search-wrap button{
-    pointer-events: auto;
-    background: transparent;
+    background: transparent !important;
   }
 
-  /* sonuç listesi: search'ün altında */
-  #tagResults{
-    position: fixed;
-    top: 132px;                /* search bar + boşluk (top 76 + yaklaşık 56) */
-    left: 12px;
-    right: 12px;
-    z-index: 10000;
-    max-height: 45vh;
-    overflow: auto;
+  /* SEARCH RESULTS (varsa) */
+  #tagResults {
+    position: fixed !important;
+    top: 146px !important;
+    left: 12px !important;
+    right: 12px !important;
+    z-index: 100000 !important;
+    max-height: 45vh !important;
+    overflow: auto !important;
 
-    background: rgba(255,255,255,0.92);
-    border: 1px solid rgba(0,0,0,0.10);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 14px;
+    background: rgba(255,255,255,0.92) !important;
+    border: 1px solid rgba(0,0,0,0.12) !important;
+    border-radius: 14px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
   }
 
-  /* 2) Panel (alttan çıkan detay paneli) */
-  .panel{
-    position: fixed;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    top: auto;
-
-    height: 42vh;
-    overflow-y: auto;
-    border-radius: 16px 16px 0 0;
-    z-index: 9000;
-  }
-
-  /* infoBox (sol alttaki i butonu açınca çıkan kutu) */
-  .infoBox{
-    width: calc(100% - 20px);
-    max-width: none;
-    left: 10px;
-    right: 10px;
-    z-index: 9500;
-  }
-
-  /* 3) Lejant: %50 küçült + yarı opak sınır */
+  /* LEGEND: Leaflet control içinde en alttaki kutuyu küçült */
+  .leaflet-bottom.leaflet-right .leaflet-control,
+  .leaflet-control.map-legend,
   .map-legend,
-  .legend{
-    transform: scale(0.5);
-    transform-origin: bottom right;
+  .legend {
+    transform: scale(0.5) !important;
+    transform-origin: bottom right !important;
 
-    background: rgba(255,255,255,0.70);
-    border: 1px solid rgba(0,0,0,0.18);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
-    padding: 10px;
-    border-radius: 14px;
+    background: rgba(255,255,255,0.72) !important;
+    border: 1px solid rgba(0,0,0,0.18) !important;
+    border-radius: 14px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
   }
 
-  /* lejant yazıları sıkıştır */
-  .map-legend .legend-title,
-  .legend .legend-title{ font-size: 14px; }
-
-  .map-legend .legend-label,
-  .legend .legend-label{ font-size: 12px; }
-
-  /* 4) Leaflet kontrolleri search'ün üstüne çıkmasın */
-  .leaflet-control-container{
-    z-index: 1000;
-  }
+  /* Leaflet kontrol katmanları search'ün altına kalsın */
+  .leaflet-control-container { z-index: 1000 !important; }
 }
+
+
 
 
 
