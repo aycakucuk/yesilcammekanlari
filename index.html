@@ -322,85 +322,92 @@
 .infoList li{ margin-bottom: 8px; }
 /*info*/
 
+/* =========================
+   GUARANTEED MOBILE OVERRIDES
+   (iPhone Safari dahil)
+   ========================= */
 
-@media (max-width: 768px) {
+/* Telefonları kesin yakalamak için: hover yok + coarse pointer */
+@media (hover: none) and (pointer: coarse) {
 
-  /* 0) Harita tam ekran */
-  html, body { height: 100%; margin: 0; }
-  #map { height: 100vh; width: 100vw; }
+  /* Map full */
+  html, body { height: 100% !important; margin: 0 !important; }
+  #map { height: 100vh !important; width: 100vw !important; }
 
-  /* 1) Başlık kartı (üstte) */
+  /* Header: full width */
   .map-header{
-    position: fixed !important;
     top: 12px !important;
     left: 12px !important;
     right: 12px !important;
+    max-width: none !important;
     z-index: 9000 !important;
   }
 
-  /* 2) Search bar (başlığın altında, compact, asla yarım değil) */
+  /* SEARCH: desktop ortalama kurallarını iptal et */
   .search-wrap{
-    position: fixed !important;
-    top: 84px !important;          /* başlığın altı */
     left: 12px !important;
     right: 12px !important;
-    z-index: 9001 !important;
+    top: 86px !important;
+    transform: none !important;     /* 🔥 en kritik satır */
+    width: auto !important;
+    max-width: none !important;
 
     display: flex !important;
     align-items: center !important;
     gap: 8px !important;
 
     padding: 6px 8px !important;
+    border-radius: 12px !important;
+    z-index: 9001 !important;
+
     background: rgba(255,255,255,0.78) !important;
     border: 1px solid rgba(0,0,0,0.12) !important;
-    border-radius: 12px !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
 
     box-sizing: border-box !important;
   }
 
-  /* 🔥 kritik: flex child küçülebilsin */
-  .search-wrap > * { min-width: 0 !important; }
-
-  .search-wrap input{
+  /* Input: desktop width hesabını ez */
+  #tagSearch{
+    width: 100% !important;         /* 🔥 */
+    min-width: 0 !important;
     flex: 1 1 auto !important;
-    min-width: 0 !important;       /* 🔥 yarım kalma fix */
+
     height: 32px !important;
     font-size: 13px !important;
     padding: 6px 10px !important;
     border-radius: 8px !important;
+
     background: rgba(255,255,255,0.55) !important;
+    box-sizing: border-box !important;
   }
 
-  .search-wrap button{
+  /* Buton: küçük */
+  #tagBtn{
     flex: 0 0 auto !important;
-    height: 10px !important;
+    height: 32px !important;
     padding: 0 12px !important;
-    font-size: 8px !important;
+    font-size: 13px !important;
     border-radius: 8px !important;
     white-space: nowrap !important;
   }
 
-  /* Search results */
-  #tagResults{
+  /* Results: fixed ve üstte */
+  #tagResults.search-results{
     position: fixed !important;
-    top: 132px !important;
+    top: 134px !important;
     left: 12px !important;
     right: 12px !important;
     z-index: 9002 !important;
 
     max-height: 42vh !important;
-    overflow-y: auto !important;
+    overflow: auto !important;
 
-    background: rgba(255,255,255,0.92) !important;
-    border: 1px solid rgba(0,0,0,0.10) !important;
     border-radius: 12px !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
   }
 
-  /* 3) PANEL: tekrar alttan açılan sheet olsun */
+  /* PANEL: alttan sheet */
   #panel.panel{
     position: fixed !important;
     left: 10px !important;
@@ -409,50 +416,34 @@
     top: auto !important;
 
     height: 42vh !important;
-    max-height: 60vh !important;
+    max-height: 65vh !important;
     overflow-y: auto !important;
 
     border-radius: 16px 16px 0 0 !important;
     z-index: 9500 !important;
   }
 
-  /* Panel kapalıyken görünmesin (senin class mantığına uyumlu) */
-  #panel.panel:not(.open){
-    transform: translateY(110%) !important;
-    transition: transform 240ms ease !important;
-  }
-  #panel.panel.open{
-    transform: translateY(0) !important;
-  }
+  /* Panel kapalı/ açık animasyonu */
+  #panel.panel{ transform: translateY(110%) !important; transition: transform 240ms ease !important; }
+  #panel.panel.open{ transform: translateY(0) !important; display: block !important; }
 
-  /* Overlay panel açıldığında üstte ama header/search yine üstte kalsın */
-  #overlay.overlay{
-    z-index: 9400 !important;
-  }
+  /* Overlay: panel altında, header/search üstte */
+  #overlay.overlay{ z-index: 9400 !important; }
 
-  /* 4) Legend: scale yok, küçük ama kaybolmaz */
+  /* Legend: scale yok, küçük ve kaybolmaz */
   .map-legend{
     transform: none !important;
     max-width: 170px !important;
     padding: 8px 10px !important;
-    border-radius: 14px !important;
-
-    background: rgba(255,255,255,0.72) !important;
-    border: 1px solid rgba(0,0,0,0.18) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
   }
-  .map-legend .legend-title{ font-size: 11px !important; }
-  .map-legend .legend-label{ font-size: 10px !important; line-height: 1.15 !important; }
+  .legend-title{ font-size: 11px !important; }
+  .legend-label{ font-size: 10px !important; line-height: 1.15 !important; }
 
   /* Leaflet controls search'ün üstüne çıkmasın */
-  .leaflet-control-container{ z-index: 1000 !important; }
+  .leaflet-top.leaflet-right{ z-index: 1000 !important; }
 }
 
 
-@media (max-width: 520px){
-  body{ outline: 5px solid red; }
-}
 
 
   </style>
