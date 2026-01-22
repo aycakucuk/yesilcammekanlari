@@ -63,11 +63,7 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                     "assets/umitler-kirilinca/rumeli-hisar.jpeg"
                 ]
             },
-            {
-                title: "Azap", year: 1973, note: "", stills: [
 
-                ]
-            },
             {
                 title: "İstanbul 79",
                 year: 1979,
@@ -115,7 +111,14 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                 title: "Vesikalı Yarim ", year: 1981, note: "", stills: [
                     "assets/vesikali-yarim/taskisla.jpeg"
                 ]
+            },
+
+            {
+                title: "Bizim Kız ", year: 1977, note: "", stills: [
+                    "assets/bizim-kiz/inonu.jpeg"
+                ]
             }
+
         ]
     },
 
@@ -131,14 +134,21 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
             "mekanlar/akm.jpg"
         ],
         films: [
-            { title: "Salak Milyoner", year: 1974, note: "", stills: [] },
+
             {
                 title: "Şoför Nebahat", year: 1970, note: "", stills: [
                     "assets/sofor-nebahat/akm-sofor.jpeg",
                     "assets/sofor-nebahat/akmakm.jpeg"
 
                 ]
-            }
+            },
+
+            {
+                title: "Turist Ömer", year: 1973, note: "", stills: [
+                    "assets/turist-omer/akm-meydan.jpg"
+                ]
+            },
+
         ]
     },
 
@@ -153,7 +163,11 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
             "mekanlar/taksim-meydani.jpg"
         ],
         films: [
-            { title: "Salak Milyoner", year: 1974, note: "", stills: [] },
+            {
+                title: "Salak Milyoner", year: 1974, note: "", stills: [
+                    "assets/salak-milyoner/taksimm.jpeg"
+                ]
+            },
             {
                 title: "Neşeli Günler", year: 1978, note: "", stills: [
                     "assets/neseli-gunler/meydan.jpeg",
@@ -161,7 +175,12 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
 
                 ]
             },
-            { title: "Taşı Toprağı Altın Şehir", year: 1978, note: "", stills: [] },
+            {
+                title: "Taşı Toprağı Altın Şehir", year: 1978, note: "", stills: [
+                    "assets/tasi-topragi-altin-sehir/taksim-meydan.jpeg",
+                    "assets/tasi-topragi-altin-sehir/taksim-meydannn.jpeg"
+                ]
+            },
             {
                 title: "İstanbul 79",
                 year: 1979,
@@ -208,8 +227,23 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                     "assets/erikler-cicek-acti/tarabyya.jpeg"
                 ]
             },
-            { title: "Afili Delikanlılar", year: 1964, note: "", stills: [] },
-            { title: "Küçük Hanımın Şoförü", year: 1962, note: "", stills: [] }
+            {
+                title: "Afili Delikanlılar", year: 1964, note: "", stills: [
+                    "assets/afilli-delikanlilar/tarabya-otel.jpg"
+                ]
+            },
+            {
+                title: "Küçük Hanımın Şoförü", year: 1962, note: "", stills: [
+                    "assets/kucuk-hanimin-soforu/tarabya-otel.jpeg"
+
+                ]
+            },
+            {
+                title: "Vefasız", year: 1972, note: "", stills: [
+                    "assets/vefasiz/tarabya.jpg"
+
+                ]
+            }
         ]
     },
 
@@ -241,7 +275,9 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                 title: "Azap",
                 year: 1973,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/Azap/beyazit.jpg"
+                ]
             }
         ],
 
@@ -275,10 +311,19 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
         placeImages: ["mekanlar/darcan.png"],
 
         films: [
-            { title: "Şaşkın Damat", year: 1975, note: "", stills: [] },
+            {
+                title: "Şaşkın Damat", year: 1975, note: "", stills: [
+                    "assets/saskin-damat/darcan.png"
+                ]
+            },
 
 
-            { title: "Tosun Paşa", year: 1976, note: "", stills: [] },
+            {
+                title: "Tosun Paşa", year: 1976, note: "", stills: [
+                    "assets/tosun-pasa/darcan-kosku.png",
+                    "assets/tosun-pasa/sari-kosk.png"
+                ]
+            },
 
 
             {
@@ -321,10 +366,12 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                     "assets/pantolon-bankasi/dorduncu-levent.jpeg"
                 ]
             },
-            { title: "Vefasız", year: 1972, note: "", stills: [] },
+            {
+                title: "Vefasız", year: 1972, note: "", stills: [
+                    "assets/vefasiz/vefsiz-levent.jpg"
+                ]
+            },
 
-
-            { title: "Ah Nerede", year: 1975, note: "", stills: [] }
 
         ],
 
@@ -451,12 +498,7 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                     "assets/sofor-nebahat/mezarlik.jpeg"
                 ]
             },
-            {
-                title: "Birleşen Yollar",
-                year: 1970,
-                note: "",
-                stills: []
-            }
+
         ],
 
         polygon: [
@@ -521,8 +563,23 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                     "assets/ver-elini-istanbul/haydarpasaa.jpeg"
                 ]
             },
-            { title: "Azap", year: 1973, note: "", stills: [] },
-            { title: "Taşı Toprağı Altın Şehir", year: 1978, note: "", stills: [] }
+            {
+                title: "Azap", year: 1973, note: "", stills: [
+                    "assets/Azap/haydarpasa.jpg"
+                ]
+            },
+            {
+                title: "Taşı Toprağı Altın Şehir", year: 1978, note: "", stills: [
+                    "assets/tasi-topragi-altin-sehir/haydarpasa-tren.jpeg",
+                    "assets/tasi-topragi-altin-sehir/haydarpasa-tren-garii.jpeg"
+                ]
+            },
+
+            {
+                title: "Gençlik Hülyaları", year: 1962, note: "", stills: [
+                    "assets/genclik-hulyalari/haydarpasa.jpeg"
+                ]
+            },
         ]
     },
 
@@ -572,7 +629,10 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
                 title: "Karakolda Ayna Var",
                 year: 1966,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/karakolda-ayna-var/zeyrekcamii.png",
+                    "assets/karakolda-ayna-var/zeyrekkcammi.png"
+                ]
             },
             {
                 title: "Battal Gazi Destanı",
@@ -640,10 +700,10 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
         films: [
             {
                 title: "Neşeli Günler", year: 1978, note: "", stills: [
-
+                    "assets/neseli-gunler/bebek.jpeg"
                 ]
             },
-            { title: "Taşı Toprağı Altın Şehir", year: 1978, note: "", stills: [] }
+
         ],
 
         // Leaflet polygon: [lat, lon]
@@ -678,12 +738,25 @@ Yapı; dikdörtgen planlı, ortası avlulu, bir bodrum ve iki tam katlı kurgusu
         ],
 
         films: [
-            { title: "Tosun Paşa", year: 1976, note: "", stills: [] },
+            {
+                title: "Bizim Kız", year: 1977, note: "", stills: [
+                    "assets/bizim-kiz/saidhalim.jpeg",
+                    "assets/bizim-kiz/saidhalimpapsa.jpeg"
+                ]
+            },
             {
                 title: "Bizim Aile", year: 1975, note: "", stills: [
                     "assets/bizim-aile/halimpasa.jpeg"
                 ]
+            },
+
+            {
+                title: "Maceralar Kralı", year: 1963, note: "", stills: [
+                    "assets/maceralar-krali/said-halim.jpg"
+                ]
             }
+
+
         ]
     },
 
@@ -712,7 +785,10 @@ III. Ahmet Çeşmesi, yalnızca bir hayrat yapısı değil; Osmanlı şehir este
                 title: "Karakolda Ayna Var",
                 year: 1966,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/karakolda-ayna-var/ahmetcesmeee.png",
+                    "assets/karakolda-ayna-var/ahmetcesme.png"
+                ]
             },
             {
                 title: "Kanlı Nigar",
@@ -745,12 +821,24 @@ III. Ahmet Çeşmesi, yalnızca bir hayrat yapısı değil; Osmanlı şehir este
             "mekanlar/muarrem-karaca-evi-12.webp"
         ],
         films: [
-            { title: "Gençlik Hülyaları", year: 1962, note: "", stills: [] },
-            { title: "Küçük Hanımın Şoförü", year: 1962, note: "", stills: [] },
-            { title: "Afili Delikanlılar", year: 1964, note: "", stills: [] },
+            {
+                title: "Gençlik Hülyaları", year: 1962, note: "", stills: [
+                    "assets/genclik-hulyalari/karacaevi.jpeg"
+                ]
+            },
+
+            {
+                title: "Afili Delikanlılar", year: 1964, note: "", stills: [
+                    "assets/afilli-delikanlilar/karaca-evi.jpg"
+                ]
+            },
             { title: "Kırık Hayatlar", year: 1965, note: "", stills: [] },
             { title: "Cibali Karakolu", year: 1967, note: "", stills: [] },
-            { title: "Yumurcak", year: 1969, note: "", stills: [] },
+            {
+                title: "Yumurcak", year: 1969, note: "", stills: [
+                    "assets/yumurcak-karaca.png"
+                ]
+            },
             { title: "Kalbimin Efendisi", year: 1970, note: "", stills: [] },
             {
                 title: "Ateş Parçası", year: 1971, note: "", stills: [
@@ -759,23 +847,35 @@ III. Ahmet Çeşmesi, yalnızca bir hayrat yapısı değil; Osmanlı şehir este
                 ]
             },
             { title: "Güllü", year: 1971, note: "", stills: [] },
-            { title: "Küçük Sevgilim", year: 1971, note: "", stills: [] },
-            { title: "Satın Alınan Koca", year: 1971, note: "", stills: [] },
             {
-                title: "Vurguncular", year: 1971, note: "", stills: [
-
+                title: "Küçük Sevgilim", year: 1971, note: "", stills: [
+                    "assets/kucuk-sevgilim/karaca-evi.jpeg"
                 ]
             },
+            { title: "Satın Alınan Koca", year: 1971, note: "", stills: [] },
+
             { title: "Zehra", year: 1972, note: "", stills: [] },
             {
                 title: "Beş Tavuk Bir Horoz", year: 1974, note: "", stills: [
                     "assets/bes-tavuk-bir-horoz/karacaevi.jpeg"
                 ]
             },
-            { title: "Evcilik Oyunu", year: 1975, note: "", stills: [] },
+            {
+                title: "Evcilik Oyunu", year: 1975, note: "", stills: [
+                    "assets/evcilik-oyunu/karaca-evi.jpeg"
+                ]
+            },
             { title: "Gece Kuşu Zehra", year: 1975, note: "", stills: [] },
-            { title: "Küçük Bey", year: 1975, note: "", stills: [] },
-            { title: "Şaşkın Damat", year: 1975, note: "", stills: [] },
+            {
+                title: "Maceralar Kralı", year: 1963, note: "", stills: [
+                    "assets/maceralar-krali/karaca-evi.jpg"
+                ]
+            },
+            {
+                title: "Şaşkın Damat", year: 1975, note: "", stills: [
+                    "assets/saskin-damat/karaca-kosku.png"
+                ]
+            },
             { title: "Güngörmüşler", year: 1976, note: "", stills: [] }
         ]
 
@@ -801,10 +901,18 @@ Yapının mimari projesi, Rana Zıpçı, Ahmet Akın ve Emin Ertam tarafından h
             "mekanlar/cinar_hotel.png"
         ],
         films: [
-            { title: "Allah Seviniz Dedi", year: 1962, note: "", stills: [] },
             { title: "Kahpe", year: 1963, note: "", stills: [] },
-            { title: "Maceralar Kralı", year: 1963, note: "", stills: [] },
-            { title: "Melek mi Şeytan mı?", year: 1971, note: "", stills: [] },
+            {
+                title: "Maceralar Kralı", year: 1963, note: "", stills: [
+                    "assets/maceralar-krali/cinsr.jpg"
+                ]
+            },
+            {
+                title: "Melek mi Şeytan mı?", year: 1971, note: "", stills: [
+                    "assets/melek-mi-seytan-mi/cinar-otel.jpg",
+                    "assets/melek-mi-seytan-mi/cinar-otelii.jpg"
+                ]
+            },
             { title: "Hamza Dalsın Osman Çalsın", year: 1977, note: "", stills: [] },
             { title: "Yuvasız Kuşlar", year: 1979, note: "", stills: [] }
         ]
@@ -868,7 +976,9 @@ Osmanlı’nın son döneminde Jandarma Kumandanlığı, Cumhuriyet döneminde i
                 title: "Karakolda Ayna Var",
                 year: 1966,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/karakolda-ayna-var/mackaa.png"
+                ]
             }
         ]
     },
@@ -896,8 +1006,18 @@ Hilton Istanbul Bosphorus, mimari dili, strüktürel netliği ve modern yaşam b
         films: [
             { title: "Katilin Kızı", year: 1964, note: "", stills: [] },
             { title: "Hırsız", year: 1965, note: "", stills: [] },
-            { title: "Ah Güzel İstanbul", year: 1966, note: "", stills: [] },
-            { title: "Birleşen Yollar", year: 1970, note: "", stills: [] },
+            {
+                title: "Ah Güzel İstanbul", year: 1966, note: "", stills: [
+                    "assets/ah-guzel-istanbul/ist-hilton.jpeg",
+                    "assets/ah-guzel-istanbul/hilton.jpeg"
+                ]
+            },
+            {
+                title: "Birleşen Yollar", year: 1970, note: "", stills: [
+                    "assets/birlesen-yollar/yollar_hilton.jpeg",
+                    "assets/birlesen-yollar/hilton.jpeg"
+                ]
+            },
             { title: "Oyun Bitti", year: 1971, note: "", stills: [] },
             { title: "Üç Arkadaş", year: 1971, note: "", stills: [] },
             {
@@ -906,7 +1026,11 @@ Hilton Istanbul Bosphorus, mimari dili, strüktürel netliği ve modern yaşam b
                     "assets/vurguncular/hilton.jpeg"
                 ]
             },
-            { title: "Turist Ömer", year: 1973, note: "", stills: [] },
+            {
+                title: "Turist Ömer", year: 1973, note: "", stills: [
+                    "assets/turist-omer/hilton.jpg"
+                ]
+            },
             { title: "Vurgun", year: 1973, note: "", stills: [] },
             { title: "Yaz Bekarı", year: 1974, note: "", stills: [] },
             {
@@ -915,7 +1039,13 @@ Hilton Istanbul Bosphorus, mimari dili, strüktürel netliği ve modern yaşam b
                 ]
             },
             { title: "Ne Umduk Ne Bulduk", year: 1976, note: "", stills: [] },
-            { title: "Bizim Kız", year: 1977, note: "", stills: [] }
+            {
+                title: "Bizim Kız", year: 1977, note: "", stills: [
+                    "assets/bizim-kiz/hillton.jpeg",
+                    "assets/bizim-kiz/hilton.jpeg"
+
+                ]
+            }
         ]
     },
 
@@ -974,6 +1104,8 @@ Sarol Villası, yalnızca mimarisiyle değil, politik ve toplumsal tartışmalar
                 year: 1962,
                 note: "Filmde modernist ve yeni zengin yaşam tarzını temsil eden mekân olarak kullanılmıştır.",
                 stills: [
+                    "assets/aci-hayat/mukeremsarolvillasi.png",
+                    "assets/aci-hayat/sarolvilla.png"
 
                 ]
             }
@@ -1037,7 +1169,11 @@ Mimari dil; batı cephesindeki balkon çıkmaları, tek yana kırılmış metal 
                 title: "Evcillik Oyunu",
                 year: 1975,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/evcilik-oyunu/sadik.jpeg",
+                    "assets/evcilik-oyunu/sadiko.jpeg",
+                    "assets/evcilik-oyunu/sadikoglu.jpeg"
+                ]
             }
         ]
     },
@@ -1066,13 +1202,20 @@ Necmi Şahin Villası, özgün mimari dili ve güçlü mekânsal kurgusu sayesin
                 title: "İstasyon",
                 year: 1977,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/istasyon/necmi-sahin.png",
+                    "assets/istasyon/necmisahinvillaassi.png",
+                    "assets/istasyon/necmisahhh.png"
+                ]
             },
             {
                 title: "İşte Bizim Hikâyemiz",
                 year: 1978,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/iste-bizim-hikayemiz/necmi-sahin-villa.jpg",
+                    "assets/iste-bizim-hikayemiz/necmi-sahin.jpg"
+                ]
             }
         ]
     },
@@ -1171,7 +1314,10 @@ Harime, revaklı avluya açılan mukarnaslı cümle kapısı başta olmak üzere
                 title: "Birleşen Yollar",
                 year: 1970,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/birlesen-yollar/birleşen yollar_cami.jpeg",
+                    "assets/birlesen-yollar/sultanahmet.jpeg"
+                ]
             }
         ]
     },
@@ -1236,7 +1382,7 @@ Yedi kubbeli son cemaat yeri mermer ve granit sütunlara oturan revaklarla avluy
                 year: 1962,
                 note: "Cami ve çevresi filmde kentsel arka plan olarak kullanılmıştır.",
                 stills: [
-
+                    "assets/aska-kinim-var/mihrimah.jpeg"
                 ]
             }
         ]
@@ -1283,7 +1429,7 @@ Cepheler, pilastırlarla bölümlenmiş yüksek duvar yüzeyleri, yuvarlak ve di
                 year: 1973,
                 note: "Boğaz kıyısındaki sahnelerde cami ve çevresi görünür.",
                 stills: [
-
+                    "assets/turist-omer/bezmialem-valide-sult.jpg"
                 ]
             }
         ]
@@ -1781,39 +1927,39 @@ Bu yönleriyle Ataköy Toplu Konutları, yalnızca bir konut alanı değil, mode
         ]
     },
 
-{
-  id: "tercuman_gazetesi_binasi",
-  name: "Tercüman Gazetesi Binası",
-  type: "Basın / Endüstri Yapısı",
-  district: "Zeytinburnu",
-  coords: {
-    lat: 41.01473597496741,
-    lon: 28.90975683270193
-  },
-  shortText:
-    "1970’lerin Yeni Brütalist dilini güçlü konsollar, servis kuleleri ve brüt beton yüzeylerle görünür kılan; matbaa, yönetim ve dağıtımı tek merkezde toplayan kurumsal yapı.",
-  description: `Tercüman Gazetesi Matbaa ve Yönetim Binası, 1974 yılında İstanbul Zeytinburnu’nda, D-100 karayolu üzerinde Tercüman Gazetesi için inşa edilmiştir. Yapının projesi, 1972’de açılan davetli mimari yarışma sonucunda Günay Çilingiroğlu ve Muhlis Tunca tarafından hazırlanmış; statik tasarımı Rasin Etiman tarafından gerçekleştirilmiştir. Bina, gazetenin matbaa, yönetim ve dağıtım işlevlerini tek bir merkezde toplamak amacıyla tasarlanmıştır.
+    {
+        id: "tercuman_gazetesi_binasi",
+        name: "Tercüman Gazetesi Binası",
+        type: "Basın / Endüstri Yapısı",
+        district: "Zeytinburnu",
+        coords: {
+            lat: 41.01473597496741,
+            lon: 28.90975683270193
+        },
+        shortText:
+            "1970’lerin Yeni Brütalist dilini güçlü konsollar, servis kuleleri ve brüt beton yüzeylerle görünür kılan; matbaa, yönetim ve dağıtımı tek merkezde toplayan kurumsal yapı.",
+        description: `Tercüman Gazetesi Matbaa ve Yönetim Binası, 1974 yılında İstanbul Zeytinburnu’nda, D-100 karayolu üzerinde Tercüman Gazetesi için inşa edilmiştir. Yapının projesi, 1972’de açılan davetli mimari yarışma sonucunda Günay Çilingiroğlu ve Muhlis Tunca tarafından hazırlanmış; statik tasarımı Rasin Etiman tarafından gerçekleştirilmiştir. Bina, gazetenin matbaa, yönetim ve dağıtım işlevlerini tek bir merkezde toplamak amacıyla tasarlanmıştır.
 
 Yapı, 1970’li yıllar Türkiye mimarlığında Yeni Brütalist yaklaşımın dikkat çekici örneklerinden biridir. Program, alt katlarda matbaa ve teknik birimler, orta katlarda yazı işleri ve idari mekânlar, üst katlarda ise yönetim birimleri olacak şekilde kurgulanmıştır. Bu işlevsel ayrışma, kütlede yatay ve düşey geri çekilmeler ile belirgin konsol çıkmalarla okunur hâle getirilmiştir.
 
 Yaklaşık 15 m’ye varan konsollar ve bunları taşıyan sekiz adet servis kulesi yapının en karakteristik mimari unsurudur. Servis kuleleri hem taşıyıcı sistemi oluşturmakta hem de düşey sirkülasyon ve teknik hacimleri barındırmaktadır. Brüt beton yüzeyler, yatay pencere bantları ve strüktürün açıkça sergilenmesi, yapının mimari ifadesini tanımlar.
 
 Farklı dönemlerde çeşitli kurumlarca kullanılan yapı, 2010 yılında tescillenmiş; 2012’de tescili kaldırılmıştır. Deprem riski gerekçesiyle alınan karar doğrultusunda bina 4 Aralık 2023 tarihinde yıkılmıştır. Yapı, yıkımına kadar geçen süreçte Türkiye’de modern mimarlık ve yarışma yoluyla elde edilmiş kurumsal yapılar arasında önemli bir örnek olarak kabul edilmiştir.`,
-  geometry: {
-    type: "Feature",
-    properties: {},
-    geometry: {
-      type: "Point",
-      coordinates: [28.90975683270193, 41.01473597496741] // [lon, lat]
+        geometry: {
+            type: "Feature",
+            properties: {},
+            geometry: {
+                type: "Point",
+                coordinates: [28.90975683270193, 41.01473597496741] // [lon, lat]
+            }
+        },
+        placeImages: [
+            "mekanlar/Tercuman_Newspaper_building.jpg"
+        ],
+        films: [
+            { title: "İstasyon", year: 1977, note: "", stills: [] }
+        ]
     }
-  },
-  placeImages: [
-    "mekanlar/Tercuman_Newspaper_building.jpg"
-  ],
-  films: [
-    { title: "İstasyon", year: 1977, note: "", stills: [] }
-  ]
-}
 
 
 
