@@ -61,8 +61,22 @@ function closePanel() {
 function toPublicURL(src) {
   if (!src) return "";
   return new URL(src, document.baseURI).toString();
-
 }
+
+function imgOrPlaceholder(src) {
+  const url = toPublicURL(src);
+  if (!url) return `<div class="imgbox">Görsel</div>`;
+  return `
+    <div class="imgbox">
+      <img src="${url}" alt="" loading="lazy"
+        onerror="this.closest('.imgbox').innerHTML='Görsel';" />
+    </div>
+  `;
+}
+
+overlay?.addEventListener("click", closePanel);
+closeBtn?.addEventListener("click", closePanel);
+panelContent?.addEventListener("click", (e) => { /* chip handler */ });
 
 
 function renderPlaceHTML(p) {
