@@ -353,11 +353,28 @@
     border-radius: 12px 12px 0 0;
   }
 
-  /* arama alanı */
-  .search-wrap {
-    width: calc(100% - 20px);
-    left: 10px;
-  }
+ /* Search bar her zaman üstte ve tıklanabilir olsun */
+.search-wrap {
+  position: fixed;
+  top: env(safe-area-inset-top, 12px);
+  left: 12px;
+  right: 12px;
+  z-index: 5000;
+  pointer-events: auto;
+}
+
+/* Leaflet kontrolleri search'ün üstüne çıkmasın */
+.leaflet-top,
+.leaflet-control-container {
+  z-index: 1000;
+}
+
+/* Input ve buton kesin tıklansın */
+.search-wrap input,
+.search-wrap button {
+  pointer-events: auto;
+}
+
 }
 
 
