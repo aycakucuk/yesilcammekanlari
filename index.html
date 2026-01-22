@@ -323,14 +323,11 @@
 /*info*/
 
 
-
 @media (max-width: 768px) {
 
   /* =========================
-     HEADER + SEARCH
+     HEADER
      ========================= */
-
-  /* Başlık kartı üstte kalsın */
   .map-header{
     position: fixed !important;
     top: 12px !important;
@@ -339,94 +336,76 @@
     z-index: 9000 !important;
   }
 
-  /* Search bar: başlığın altına, tam genişlik, şeffaf */
+  /* =========================
+     SEARCH BAR (COMPACT)
+     ========================= */
   .search-wrap{
     position: fixed !important;
-    top: 96px !important;           /* gerekirse 88 / 104 oyna */
+    top: 78px !important;          /* başlığın altı */
     left: 12px !important;
     right: 12px !important;
     z-index: 9001 !important;
 
-    background: rgba(255,255,255,0.82) !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+
+    padding: 6px 8px !important;   /* 🔴 KÜÇÜLDÜ */
+    height: auto !important;
+
+    background: rgba(255,255,255,0.75) !important;
     border: 1px solid rgba(0,0,0,0.12) !important;
-    border-radius: 14px !important;
+    border-radius: 12px !important;
+
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-
-    padding: 10px 10px !important;
-    box-sizing: border-box !important;
   }
 
-  /* Input yarım kalmasın */
+  /* input daha küçük */
   .search-wrap input{
-    width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-    background: transparent !important;
+    flex: 1 !important;
+    height: 32px !important;       /* 🔴 */
+    font-size: 13px !important;    /* 🔴 */
+    padding: 6px 10px !important;
+
+    border-radius: 8px !important;
+    background: rgba(255,255,255,0.6) !important;
   }
 
+  /* Ara butonu mini */
   .search-wrap button{
-    background: rgba(0,0,0,0.03) !important;
+    height: 32px !important;
+    padding: 0 12px !important;
+    font-size: 13px !important;
+    border-radius: 8px !important;
   }
 
-  /* Sonuç listesi search'ün altında */
+  /* =========================
+     SEARCH RESULTS
+     ========================= */
   #tagResults{
     position: fixed !important;
-    top: 156px !important;          /* top(96) + yaklaşık search yüksekliği */
+    top: 124px !important;   /* search altı */
     left: 12px !important;
     right: 12px !important;
     z-index: 9002 !important;
 
-    max-height: 45vh !important;
-    overflow: auto !important;
+    max-height: 40vh !important;
+    overflow-y: auto !important;
 
     background: rgba(255,255,255,0.92) !important;
-    border: 1px solid rgba(0,0,0,0.10) !important;
-    border-radius: 14px !important;
+    border: 1px solid rgba(0,0,0,0.12) !important;
+    border-radius: 12px !important;
+
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
   }
-
-  /* Leaflet kontrolleri search'ün altında kalsın */
-  .leaflet-control-container{ z-index: 1000 !important; }
 
   /* =========================
-     LEGEND (KAYBOLMASIN DİYE SCALE YOK)
+     LEAFLET KATMANLARI
      ========================= */
-
-  /* sağ altta kesilme olmasın */
-  .leaflet-bottom.leaflet-right{
-    margin: 0 8px 8px 0 !important;
-  }
-
-  /* legend kutusu küçük ama görünür */
-  .map-legend{
-    transform: none !important;       /* scale KAPALI */
-    max-width: 170px !important;
-    padding: 8px 10px !important;
-    border-radius: 14px !important;
-
-    background: rgba(255,255,255,0.72) !important;
-    border: 1px solid rgba(0,0,0,0.18) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-  }
-
-  .map-legend .legend-title{
-    font-size: 11px !important;
-    margin-bottom: 6px !important;
-  }
-  .map-legend .legend-item{
-    gap: 6px !important;
-    margin: 2px 0 !important;
-  }
-  .map-legend .legend-label{
-    font-size: 10px !important;
-    line-height: 1.15 !important;
-  }
-  .map-legend .legend-dot{
-    width: 10px !important;
-    height: 10px !important;
+  .leaflet-control-container{
+    z-index: 1000 !important;
   }
 }
 
