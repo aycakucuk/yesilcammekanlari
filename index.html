@@ -326,64 +326,108 @@
 
 @media (max-width: 768px) {
 
-  /* SEARCH: sayfadaki ilk input+buton grubunu sabitle (senin bar) */
-  .search-wrap,
-  .search-bar,
-  .search,
-  #search,
-  header .search-wrap {
+  /* =========================
+     HEADER + SEARCH
+     ========================= */
+
+  /* Başlık kartı üstte kalsın */
+  .map-header{
     position: fixed !important;
-    top: 86px !important;   /* başlığın altı */
+    top: 12px !important;
     left: 12px !important;
     right: 12px !important;
-    z-index: 99999 !important;
-
-    background: rgba(255,255,255,0.80) !important;
-    border: 1px solid rgba(0,0,0,0.14) !important;
-    border-radius: 14px !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
+    z-index: 9000 !important;
   }
 
-  .search-wrap input,
-  .search-wrap button{
-    background: transparent !important;
-  }
-
-  /* SEARCH RESULTS (varsa) */
-  #tagResults {
+  /* Search bar: başlığın altına, tam genişlik, şeffaf */
+  .search-wrap{
     position: fixed !important;
-    top: 146px !important;
+    top: 96px !important;           /* gerekirse 88 / 104 oyna */
     left: 12px !important;
     right: 12px !important;
-    z-index: 100000 !important;
-    max-height: 45vh !important;
-    overflow: auto !important;
+    z-index: 9001 !important;
 
-    background: rgba(255,255,255,0.92) !important;
+    background: rgba(255,255,255,0.82) !important;
     border: 1px solid rgba(0,0,0,0.12) !important;
     border-radius: 14px !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
+
+    padding: 10px 10px !important;
+    box-sizing: border-box !important;
   }
 
-  /* LEGEND: Leaflet control içinde en alttaki kutuyu küçült */
-  .leaflet-bottom.leaflet-right .leaflet-control,
-  .leaflet-control.map-legend,
-  .map-legend,
-  .legend {
-    transform: scale(0.5) !important;
-    transform-origin: bottom right !important;
+  /* Input yarım kalmasın */
+  .search-wrap input{
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    background: transparent !important;
+  }
 
-    background: rgba(255,255,255,0.72) !important;
-    border: 1px solid rgba(0,0,0,0.18) !important;
+  .search-wrap button{
+    background: rgba(0,0,0,0.03) !important;
+  }
+
+  /* Sonuç listesi search'ün altında */
+  #tagResults{
+    position: fixed !important;
+    top: 156px !important;          /* top(96) + yaklaşık search yüksekliği */
+    left: 12px !important;
+    right: 12px !important;
+    z-index: 9002 !important;
+
+    max-height: 45vh !important;
+    overflow: auto !important;
+
+    background: rgba(255,255,255,0.92) !important;
+    border: 1px solid rgba(0,0,0,0.10) !important;
     border-radius: 14px !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
   }
 
-  /* Leaflet kontrol katmanları search'ün altına kalsın */
-  .leaflet-control-container { z-index: 1000 !important; }
+  /* Leaflet kontrolleri search'ün altında kalsın */
+  .leaflet-control-container{ z-index: 1000 !important; }
+
+  /* =========================
+     LEGEND (KAYBOLMASIN DİYE SCALE YOK)
+     ========================= */
+
+  /* sağ altta kesilme olmasın */
+  .leaflet-bottom.leaflet-right{
+    margin: 0 8px 8px 0 !important;
+  }
+
+  /* legend kutusu küçük ama görünür */
+  .map-legend{
+    transform: none !important;       /* scale KAPALI */
+    max-width: 170px !important;
+    padding: 8px 10px !important;
+    border-radius: 14px !important;
+
+    background: rgba(255,255,255,0.72) !important;
+    border: 1px solid rgba(0,0,0,0.18) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+  }
+
+  .map-legend .legend-title{
+    font-size: 11px !important;
+    margin-bottom: 6px !important;
+  }
+  .map-legend .legend-item{
+    gap: 6px !important;
+    margin: 2px 0 !important;
+  }
+  .map-legend .legend-label{
+    font-size: 10px !important;
+    line-height: 1.15 !important;
+  }
+  .map-legend .legend-dot{
+    width: 10px !important;
+    height: 10px !important;
+  }
 }
 
 
