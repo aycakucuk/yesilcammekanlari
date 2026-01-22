@@ -324,68 +324,105 @@
 
 
 
-/* MOBİL */
+
+/* =========================
+   MOBİL (RESET + FIX)
+   ========================= */
 @media (max-width: 768px) {
 
-  /* harita üstündeki paneller */
-  .panel,
-  .infoBox,
-  .legend {
+  /* 0) Genel */
+  html, body { overflow: hidden; }
+
+  /* 1) Arama çubuğu: başlığın altına + hafif şeffaf */
+  .search-wrap{
+    position: fixed;
+    top: 76px;                 /* başlık kartının altına gelsin (gerekirse 64/88 oyna) */
+    left: 12px;
+    right: 12px;
+    z-index: 9999;
+    pointer-events: auto;
+
+    background: rgba(255,255,255,0.86);
+    border: 1px solid rgba(0,0,0,0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 14px;
+  }
+
+  .search-wrap input,
+  .search-wrap button{
+    pointer-events: auto;
+    background: transparent;
+  }
+
+  /* sonuç listesi: search'ün altında */
+  #tagResults{
+    position: fixed;
+    top: 132px;                /* search bar + boşluk (top 76 + yaklaşık 56) */
+    left: 12px;
+    right: 12px;
+    z-index: 10000;
+    max-height: 45vh;
+    overflow: auto;
+
+    background: rgba(255,255,255,0.92);
+    border: 1px solid rgba(0,0,0,0.10);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 14px;
+  }
+
+  /* 2) Panel (alttan çıkan detay paneli) */
+  .panel{
+    position: fixed;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    top: auto;
+
+    height: 42vh;
+    overflow-y: auto;
+    border-radius: 16px 16px 0 0;
+    z-index: 9000;
+  }
+
+  /* infoBox (sol alttaki i butonu açınca çıkan kutu) */
+  .infoBox{
     width: calc(100% - 20px);
     max-width: none;
     left: 10px;
     right: 10px;
+    z-index: 9500;
   }
 
-  /* lejant */
-  .legend {
-    font-size: 8px;
+  /* 3) Lejant: %50 küçült + yarı opak sınır */
+  .map-legend,
+  .legend{
+    transform: scale(0.5);
+    transform-origin: bottom right;
+
+    background: rgba(255,255,255,0.70);
+    border: 1px solid rgba(0,0,0,0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
     padding: 10px;
+    border-radius: 14px;
   }
 
-  /* sidebar / bilgi paneli */
-  .panel {
-    position: fixed;
-    bottom: 0;
-    top: auto;
-    height: 40vh;
-    overflow-y: auto;
-    border-radius: 12px 12px 0 0;
+  /* lejant yazıları sıkıştır */
+  .map-legend .legend-title,
+  .legend .legend-title{ font-size: 14px; }
+
+  .map-legend .legend-label,
+  .legend .legend-label{ font-size: 12px; }
+
+  /* 4) Leaflet kontrolleri search'ün üstüne çıkmasın */
+  .leaflet-control-container{
+    z-index: 1000;
   }
-
-/* --- MOBILE SEARCH FIX --- */
-.search-wrap{
-  position: fixed;
-  top: 12px;
-  left: 12px;
-  right: 12px;
-  z-index: 9999;
-  pointer-events: auto;
 }
 
-/* search input/button tıklanabilir olsun */
-.search-wrap input,
-.search-wrap button{
-  pointer-events: auto;
-}
-
-/* sonuç listesi search'ün altında ve üstte kalsın */
-#tagResults{
-  position: fixed;
-  top: 64px;          /* search bar yüksekliğine göre ayarla */
-  left: 12px;
-  right: 12px;
-  z-index: 10000;
-  max-height: 45vh;
-  overflow: auto;
-}
-
-/* Leaflet kontrolleri search'ün üstüne çıkmasın */
-.leaflet-control-container{
-  z-index: 1000;
-}
-
-}
 
 
   </style>
