@@ -761,13 +761,17 @@ III. Ahmet Çeşmesi, yalnızca bir hayrat yapısı değil; Osmanlı şehir este
             { title: "Güllü", year: 1971, note: "", stills: [] },
             { title: "Küçük Sevgilim", year: 1971, note: "", stills: [] },
             { title: "Satın Alınan Koca", year: 1971, note: "", stills: [] },
-            { title: "Vurguncular", year: 1971, note: "", stills: [
+            {
+                title: "Vurguncular", year: 1971, note: "", stills: [
 
-            ] },
+                ]
+            },
             { title: "Zehra", year: 1972, note: "", stills: [] },
-            { title: "Beş Tavuk Bir Horoz", year: 1974, note: "", stills: [
-                "assets/bes-tavuk-bir-horoz/karacaevi.jpeg"
-            ] },
+            {
+                title: "Beş Tavuk Bir Horoz", year: 1974, note: "", stills: [
+                    "assets/bes-tavuk-bir-horoz/karacaevi.jpeg"
+                ]
+            },
             { title: "Evcilik Oyunu", year: 1975, note: "", stills: [] },
             { title: "Gece Kuşu Zehra", year: 1975, note: "", stills: [] },
             { title: "Küçük Bey", year: 1975, note: "", stills: [] },
@@ -896,16 +900,20 @@ Hilton Istanbul Bosphorus, mimari dili, strüktürel netliği ve modern yaşam b
             { title: "Birleşen Yollar", year: 1970, note: "", stills: [] },
             { title: "Oyun Bitti", year: 1971, note: "", stills: [] },
             { title: "Üç Arkadaş", year: 1971, note: "", stills: [] },
-            { title: "Vurguncular", year: 1971, note: "", stills: [
-                "assets/vurguncular/hilton-resepsiyon.jpeg",
-                "assets/vurguncular/hilton.jpeg"
-            ] },
+            {
+                title: "Vurguncular", year: 1971, note: "", stills: [
+                    "assets/vurguncular/hilton-resepsiyon.jpeg",
+                    "assets/vurguncular/hilton.jpeg"
+                ]
+            },
             { title: "Turist Ömer", year: 1973, note: "", stills: [] },
             { title: "Vurgun", year: 1973, note: "", stills: [] },
             { title: "Yaz Bekarı", year: 1974, note: "", stills: [] },
-            { title: "Beş Tavuk Bir Horoz", year: 1974, note: "", stills: [
-                "assets/bes-tavuk-bir-horoz/hilton.jpeg"
-            ] },
+            {
+                title: "Beş Tavuk Bir Horoz", year: 1974, note: "", stills: [
+                    "assets/bes-tavuk-bir-horoz/hilton.jpeg"
+                ]
+            },
             { title: "Ne Umduk Ne Bulduk", year: 1976, note: "", stills: [] },
             { title: "Bizim Kız", year: 1977, note: "", stills: [] }
         ]
@@ -1196,7 +1204,637 @@ Beş kubbeli klasik son cemaat yerine ek olarak, önde eğimli çatılı ikinci 
                 ]
             }
         ]
+    },
+
+    {
+        id: "edirnekapi-mihrimah-sultan-camii",
+        name: "Edirnekapı Mihrimah Sultan Camii",
+        type: "Cami / Külliye",
+        district: "Fatih (Edirnekapı)",
+
+        coords: {
+            lat: 41.02931193250055,
+            lon: 28.935813163153057
+        },
+
+        shortText:
+            "Edirnekapı’nın yüksek kotunda yer alan Mihrimah Sultan Camii ve külliyesi, 16. yüzyılda Sinan tarafından inşa edilen, sur içi İstanbul silüetinde güçlü bir hâkimiyet kuran bir yapı topluluğudur.",
+
+        description: `İstanbul sur içinin en yüksek kotlarından birinde, Edirnekapı’da yer alan Edirnekapı Mihrimah Sultan Camii ve külliyesi; cami, medrese, sıbyan mektebi, çifte hamam, arasta niteliğinde dükkânlar, çeşme ve türbeden oluşmaktadır. Külliye, Kanûnî Sultan Süleyman’ın kızı Mihrimah Sultan adına yaptırılmış olup 1563–1566 yılları arasında inşa edilmiştir. Yapı topluluğu, konumu itibarıyla sur içi İstanbul silüetinde belirgin bir hâkimiyet kurmaktadır.
+
+Cami, Osmanlı klasik mimarisinin başmimarı Mimar Sinan’ın olgunluk dönemi eserlerindendir. Dikdörtgen planlı harimde, ortadaki ana ibadet mekânı yanlardaki daha alçak kanatlardan ikişer sütunla ayrılmıştır. Dört büyük kemerin taşıdığı yaklaşık 20,25 m çapındaki ana kubbe mekâna hâkim unsur olarak kurgulanmıştır. Kubbe kasnağında ve kemer dolgularında yer alan çok sıralı pencereler, iç mekânın bol ışık almasını sağlamaktadır. Kıble cephesi dıştan payandalarla desteklenmiştir.
+
+Yedi kubbeli son cemaat yeri mermer ve granit sütunlara oturan revaklarla avluya açılır. Mihrap ve minber mermerden, sade fakat nitelikli bir taş işçiliğiyle yapılmıştır. İç mekânda çini bezemeye rastlanmaz; renkli camlı alçı pencereler özgün unsurlar arasında yer alır. Minare, çeşitli depremler sonrası onarımlar geçirmiş olmakla birlikte, şerefe altındaki taş işçiliği XVI. yüzyıl üslubunu yansıtmaktadır.`,
+
+        placeImages: [
+            "mekanlar/mihrimah.png"
+        ],
+
+        films: [
+            {
+                title: "Aşka Kinim Var",
+                year: 1962,
+                note: "Cami ve çevresi filmde kentsel arka plan olarak kullanılmıştır.",
+                stills: [
+
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "bezmialem-valide-sultan-camii",
+        name: "Bezmialem Valide Sultan Camii (Dolmabahçe Camii)",
+        type: "Cami / Külliye",
+        district: "Beşiktaş (Dolmabahçe)",
+
+        coords: {
+            lat: 41.036764422954036,
+            lon: 28.99531187558773
+        },
+
+
+        shortText:
+            "Dolmabahçe Sarayı aksında, Boğaz kıyısında yer alan Bezmialem Valide Sultan Camii, 19. yüzyıl Osmanlı mimarisinin ampir ve eklektik karakterini yansıtan önemli bir selâtin camisidir.",
+
+        description: `İstanbul Boğazı kıyısında, Dolmabahçe Sarayı’nın saat kulesi aksında yer alan Bezmialem Valide Sultan Camii, XIX. yüzyıl Osmanlı mimarisinin seçmeci (eklektik) karakterini yansıtan önemli bir selâtin camisidir. Yapımına hayır faaliyetleriyle tanınan Bezmiâlem Vâlide Sultan’ın emriyle başlanmış, onun 1853’teki vefatının ardından oğlu Sultan Abdülmecid tarafından tamamlanarak 1855 yılında ibadete açılmıştır. Konumu nedeniyle yapıldığı günden itibaren Dolmabahçe Camii adıyla anılagelmiştir.
+
+Cami, dönemin önde gelen mimarlarından Nikogos Balyan tarafından tasarlanmıştır. Kareye yakın planlı ana ibadet mekânı pandantif geçişli tek bir merkezî kubbe ile örtülüdür. Mekân, enine dar, boyuna gelişen prizmatik bir kütle etkisi yaratacak biçimde düzenlenmiş; kubbe, klasik yapılardan farklı olarak doğrudan duvarlar üzerine oturtulmuştur. Bu nedenle köşelerde, yapısal dengeyi sağlamak amacıyla aynı zamanda plastik birer cephe öğesi gibi ele alınmış yüksek ağırlık kuleleri yerleştirilmiştir.
+
+Cepheler, pilastırlarla bölümlenmiş yüksek duvar yüzeyleri, yuvarlak ve dikdörtgen kemerli pencere düzenleri ve belirgin kornişlerle üç katmanlı bir etki oluşturur. Barok, rokoko ve ampir üslûpların bir arada kullanıldığı süsleme anlayışı özellikle cephelerde yoğunlaşır. Caminin kuzey cephesine bitişik iki katlı Hünkâr Kasrı, ana cami hacmiyle ortak bir cephe dili kurar. Minareler bu kasrın köşelerine yerleştirilmiş olup Batı etkili bezeme anlayışını yansıtır.
+
+İç mekânda kubbe ve pandantifler Batı tarzı kalem işleriyle bezenmiştir. İki renkli mermerden yapılmış mihrap ve minber, klasik Osmanlı çizgisinden uzaklaşan barok bezeme anlayışını yansıtır. Cami ve Hünkâr Kasrı birlikte ele alındığında yapı, Osmanlı mimarisinde XIX. yüzyılın ampir ağırlıklı ve eklektik tasarım anlayışının en belirgin örneklerinden biri olarak değerlendirilir.`,
+
+        placeImages: [
+            "mekanlar/bezmialem.png"
+        ],
+
+        films: [
+            {
+                title: "Ateş Parçası",
+                year: 1971,
+                note: "Dolmabahçe çevresi ve cami, dönemin kent dokusunu yansıtan sahnelerde arka plan olarak kullanılmıştır.",
+                stills: [
+                    "assets/ates-parcasi/bezmialem.jpeg"
+                ]
+            },
+            {
+                title: "Turist Ömer",
+                year: 1973,
+                note: "Boğaz kıyısındaki sahnelerde cami ve çevresi görünür.",
+                stills: [
+
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "bezmialem_valide_sultan_cesmesi",
+        name: "Bezmialem Valide Sultan Çeşmesi",
+        type: "Meydan / Kamusal Alan",
+        district: "Beşiktaş",
+        coords: {
+            lat: 41.043120711469726,
+            lon: 28.99836151528686
+        },
+        shortText: "1839 tarihli, Ampir üslupta inşa edilmiş, Valideçeşme semtine adını veren anıtsal meydan çeşmesi.",
+        description: `Bezmialem Valide Sultan Çeşmesi, İstanbul Boğazı’nın Rumeli yakasında, Beşiktaş Spor Caddesi üzerinde yer almakta olup Bezmialem Valide Sultan tarafından 1255/1839 yılında inşa ettirilmiştir. XIX. yüzyıl Osmanlı çeşme mimarisinin seçkin örneklerinden biri olan yapı, meydan çeşmeleri grubuna girmekte ve bulunduğu çevreye adını vererek semtin Vâlideçeşme olarak anılmasına kaynaklık etmektedir. Çeşme, Ampir üslûbunda tasarlanmış olup tamamen mermer kaplamadır.
+
+Kare planlı olarak düzenlenen çeşmenin dört cephesinde dışbükey tekne taşları ve lüleler yer alır. Cepheler, üstte düz ve dışa taşkın bir saçakla sonlanmakta, saçak altında tüm yapıyı dolanan yatay bir friz bulunmaktadır. Bu frizin orta kısmında oval bir rozet içinde Sultan Abdülmecid’in tuğrası, yanlarda ise yapraklı dallar, hayat ağacı ve kıvrık dal motiflerinden oluşan simetrik bezemeler yer alır. Köşelerde düz başlıklı, yüzleri oluklandırılmış pâyeler cephe düzenini sınırlandırmaktadır.
+
+Ana cephede, dikdörtgen bir çerçeve içinde beş satırlık manzum kitâbe yer almakta; kitâbenin altında Ampir üslûbun karakteristik özelliklerini yansıtan zengin bezemeli bir ayna taşı bulunmaktadır. Ayna taşının üst kısmında kurdeleyle bağlanmış iri bir girland motifi, bunun içinden çıkan yüksek kabartmalı yaprak süslemeleri ve altında çapraz yerleştirilmiş iki meşale motifi dikkat çeker. Tekne taşlarının yanlarında seki taşları yer alır.
+
+Çeşmenin ana yola bakan cephesindeki kitâbede şair Şükrî tarafından ta‘lik hatla yazılmış beş beyitlik tarih manzumesi; sol cephede ise Zîver Paşa’ya ait ikinci bir kitâbe bulunmaktadır. Suyu başlangıçta Sultan II. Mahmud Bendi’nden bağlanmış, daha sonra Taksim ve Hamidiye sularıyla beslenmiştir.`,
+        placeImages: [
+            "mekanlar/bezmialem-cesme.png"
+        ],
+
+        films: [
+            {
+                title: "Beş Tavuk Bir Horoz",
+                year: 1974,
+                note: "",
+                stills: [
+                    "assets/bes-tavuk-bir-horoz/ahmetcesme.jpeg"
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "iu_rektorluk_binasi",
+        name: "İÜ Rektörlük Binası",
+        type: "Kışla / Okul",
+        district: "Beyazıt",
+        coords: {
+            lat: 41.013132470311916,
+            lon: 28.96384732979527
+        },
+        shortText:
+            "Osmanlı döneminde Seraskerlik (Harbiye Nezâreti) Karargâhı olarak inşa edilen, günümüzde İstanbul Üniversitesi Rektörlüğü olarak kullanılan anıtsal yapı.",
+        description: `İstanbul Üniversitesi Rektörlük Binası, Osmanlı Devleti döneminde Seraskerlik (Harbiye Nezâreti) Karargâhı olarak inşa edilmiştir. Yapı, Beyazıt’ta yer alan ve Fâtih Sultan Mehmed tarafından İstanbul’un fethinden sonra saray alanı olarak düzenlenen Sarây-ı Atîk (Eski Saray) arazisi üzerinde bulunmaktadır. Topkapı Sarayı’nın inşasından sonra işlevini yitiren bu alan, II. Mahmud döneminde Yeniçeri Ocağı’nın kaldırılmasının ardından kurulan Asâkir-i Mansûre-i Muhammediyye teşkilâtına tahsis edilmiştir.
+
+Seraskerlik makamı için ilk müstakil ve kalıcı yapı, Sultan Abdülaziz devrinde, 1864–1866 yılları arasında inşa edilmiştir. Taş malzemeyle inşa edilen bu büyük yapı, Osmanlı’nın modernleşme sürecinde askerî bürokrasinin merkezî idare binası olarak tasarlanmış; Neo-Rönesans ağırlıklı eklektik üslûbu ile dönemin Batı etkili resmî mimarlık anlayışını yansıtmıştır. Kaynaklarda yapının mimarı olarak Fransız asıllı Bourgeois’nın adı geçmekte, bina eminliğini ise Altunîzâde İsmâil Zühdü Paşa’nın yürüttüğü belirtilmektedir.
+
+Plan şeması ve ölçeği itibarıyla bir askerî karargâh ve idarî merkez olarak kurgulanan yapı, geniş koridorları, büyük toplantı ve çalışma mekânlarıyla bürokratik işleyişe uygun bir iç organizasyona sahiptir. Cephe düzeninde simetri, kat silmeleri ve pencere dizileri belirgin olup, dış mimaride klasik öğelerle Batı kaynaklı bezeme anlayışı birlikte kullanılmıştır. İç mekânlarda ise dönemin resmî yapılarında görülen neo-klasik süsleme anlayışı, varak yaldızlı bezemeler ve tavan resimleriyle temsil edilmiştir.
+
+Yapı, 1922 yılına kadar Harbiye Nezâreti tarafından kullanılmış, Cumhuriyet’in ilânı ve hükûmet merkezinin Ankara’ya taşınmasının ardından İstanbul Üniversitesi’ne devredilmiştir. Bu tarihten itibaren üniversitenin idarî merkezi olarak kullanılan bina, günümüzde İstanbul Üniversitesi Rektörlük Binası işlevini sürdürmektedir.
+
+Osmanlı askerî-idarî yapısının geç dönemini temsil eden bu yapı, işlev değiştirerek günümüze ulaşmış; Beyazıt Meydanı ve çevresinin tarihsel katmanlaşmasında belirleyici rol oynayan anıtsal nitelikli bir kamu yapısıdır.`,
+        placeImages: [
+            "mekanlar/rektorluk.png"
+        ],
+        films: [
+            {
+                title: "Gençlik Hülyaları",
+                year: 1962,
+                note: "",
+                stills: []
+            },
+            {
+                title: "Ümitler Kırılınca",
+                year: 1962,
+                note: "",
+                stills: []
+            },
+            {
+                title: "Küçük Sevgilim",
+                year: 1971,
+                note: "",
+                stills: []
+            },
+            {
+                title: "Azap",
+                year: 1973,
+                note: "",
+                stills: []
+            }
+        ]
+    },
+
+    {
+        id: "buyukada_vapur_iskelesi",
+        name: "Büyükada Vapur İskelesi",
+        type: "Ulaşım Yapısı",
+        district: "Büyükada",
+        coords: {
+            lat: 40.87507516611947,
+            lon: 29.128191947891764
+        },
+        shortText:
+            "1915’te tamamlanan, Birinci Ulusal Mimarlık Akımı özellikleri taşıyan ve Büyükada’nın ana denizyolu ulaşım yapısı olan vapur iskelesi.",
+        description: `Büyükada Vapur İskelesi, Büyükada’da İskele Meydanı’nda yer almakta olup adanın İstanbul ile denizyolu bağlantısını sağlayan ana ulaşım yapısıdır. Günümüzde kullanılan iskele binası, Mimar Mihran Azaryan tarafından tasarlanmış; V. Mehmed (Reşad) döneminde 1914’te inşa edilmeye başlanmış ve 1915’te tamamlanmıştır. Yapı, Birinci Ulusal Mimarlık Akımı özellikleri göstermektedir.
+
+Büyükada’da denizyolu ulaşımı, XIX. yüzyıl ortalarına kadar pazar kayıklarıyla sağlanmış; adaya ilk düzenli vapur seferleri 1846 yılında başlamıştır. İlk iskele, günümüzde belediye binası önünde, denize çakılmış kazıklar üzerinde ahşap bir geçit niteliğindeydi. 1867 yılında bugünkü İskele Meydanı’nın bulunduğu alan doldurulmuş, Fransız asıllı müteahhit Joseph Baudouy tarafından burada taş bir iskele ve rıhtım inşa ettirilmiştir. Artan yolcu kapasitesi nedeniyle 1899 yılında ahşap bir iskele binası yapılmış; ancak bu yapı kısa sürede yetersiz kalmıştır.
+
+Mevcut iskele binası, bu ahşap yapının yerine inşa edilmiş olup yığma taş malzemeli, simetrik kurgulu ve çini bezemeli cephesi ile dikkat çeker. Yapının zemin katında bilet gişeleri ve bekleme salonu, üst katında ise farklı dönemlerde çeşitli işlevler yer almıştır. Üst kat 1918–1923 yılları arasında gazino, 1923–1950 yılları arasında Cumhuriyet Halk Partisi Adalar İlçe Merkezi, 1950–1951 yıllarında ise adanın ilk kışlık sineması olarak kullanılmıştır.
+
+Büyükada Vapur İskelesi, yalnızca bir ulaşım yapısı değil; adanın mekânsal gelişimi, İskele Mahallesi’nin oluşumu ve XIX–XX. yüzyıl sosyal yaşamı açısından belirleyici bir odak noktasıdır. Günümüzde özgün işlevini sürdürmekte olup erişilebilir durumdadır.`,
+        placeImages: [
+            "mekanlar/buyukada-iskele.png"
+        ],
+        films: [
+            {
+                title: "Sevmek Zamanı",
+                year: 1966,
+                note: "",
+                stills: []
+            }
+        ]
+    },
+
+    {
+        id: "galata_koprusu",
+        name: "Galata Köprüsü",
+        type: "Ulaşım Yapısı",
+        district: "Eminönü / Karaköy",
+        coords: {
+            lat: 41.02023691827145,
+            lon: 28.973378888642145
+        },
+        shortText:
+            "Eminönü ile Karaköy arasında Haliç üzerinde yer alan, 19. yüzyıldan günümüze İstanbul’un ulaşım ve ticaret tarihinde belirleyici rol oynayan köprü.",
+        description: `Galata Köprüsü, İstanbul’da Haliç üzerinde Eminönü ile Karaköy arasında yer almakta olup, kentin ulaşım ve ticaret tarihinde önemli bir altyapı yapısıdır. XIX. yüzyıl ortalarında artan ticari faaliyetler, sarayın Beşiktaş’a taşınması ve kara ulaşımındaki yoğunlaşma sonucunda Eminönü–Karaköy aksında köprü ihtiyacı ortaya çıkmıştır.
+
+Bu hatta inşa edilen ilk köprü 1845 yılında, Tersane’de ahşap ve dubalı sistemle yapılmış, Cisr-i Cedid adıyla anılmıştır. Yaklaşık 500 m uzunluğundaki yapıdan geçiş ücretli olup 1853’te onarım görmüş, 1863 yılında yine ahşap ve dubalı sistemle yenilenmiştir. İkinci köprü 96 duba üzerine oturtulmuş ve yaklaşık 504 m uzunluğunda inşa edilmiştir.
+
+Ahşap köprülerin yetersiz kalması üzerine 1869 yılında demir köprü yapımı gündeme gelmiş, bu kapsamda yabancı firmalarla anlaşmalar yapılmıştır. İnşa edilen demir köprü, alınan idarî karar doğrultusunda 1872 yılında Galata–Eminönü hattı yerine Unkapanı–Azapkapı arasına taşınmış; dövme demir kafes kirişler ve dubalarla oluşturulan yapı yaklaşık 495 m uzunluğa ulaşmıştır.
+
+Artan ulaşım gereksinimleri doğrultusunda, Alman MAN firması tarafından tasarlanan yeni köprü 1912 yılında hizmete açılmıştır. Alt kotta dükkânlar ve bekleme alanları içeren bu yapı, 1992 yılında meydana gelen yangın sonucu kullanım dışı kalmıştır.
+
+Günümüzde kullanılan Galata Köprüsü ise kazık temeller üzerine oturan, açılır-kapanır sistemli bir köprü olup 1994 yılında tamamlanmış ve kara ile deniz trafiğine hizmet vermektedir.`,
+        placeImages: [
+            "mekanlar/galata-koprusu.png"
+        ],
+        films: [
+            {
+                title: "Acı Hayat",
+                year: 1962,
+                note: "",
+                stills: []
+            },
+            {
+                title: "Gençlik Hülyaları",
+                year: 1962,
+                note: "",
+                stills: []
+            },
+            {
+                title: "Küçük Hanımın Şoförü",
+                year: 1962,
+                note: "",
+                stills: []
+            },
+            {
+                title: "İstanbul 79",
+                year: 1979,
+                note: "",
+                stills: []
+            }
+        ]
+    },
+
+    {
+        id: "buyukcekmece_koprusu",
+        name: "Kanuni Sultan Süleyman Köprüsü (Büyükçekmece Köprüsü)",
+        type: "Ulaşım Yapısı",
+        district: "Büyükçekmece",
+        coords: {
+            lat: 41.02189337753231,
+            lon: 28.570820238762963
+        },
+        shortText:
+            "Mimar Sinan tarafından tasarlanan, 16. yüzyılda Büyükçekmece geçişini sağlayan anıtsal Osmanlı köprüsü.",
+        description: `Büyükçekmece Köprüsü, İstanbul’dan Rumeli’ye uzanan ana kara yolu üzerinde, taşkınlara açık alçak bir geçiş noktasında yer almaktadır. Antik Çağ’dan itibaren kullanılan bu güzergâhta Bizans dönemine ait geçiş yapısının harap olması üzerine, Kanûnî Sultan Süleyman’ın emriyle yeni bir köprü inşa edilmesi kararlaştırılmış; tasarım Hassa Başmimarı Mimar Sinan tarafından hazırlanmıştır. Yapı, Kanûnî’nin vefatından sonra Sultan II. Selim döneminde 975 (1567–68) yılında tamamlanmıştır.
+
+Köprü, bataklık alanın tamamı üzerine yayılan uzun akslı ve kesintisiz bir kurgu ile ele alınmış; kısa ve yüksek ayaklı çözümler yerine zemine uyumlu bir geçiş sistemi oluşturulmuştur. Bu yaklaşım, Sinan’ın arazi, su rejimi ve strüktürü birlikte değerlendiren mühendislik anlayışını yansıtır.
+
+Yapı dört bölümden oluşmakta olup toplam uzunluğu 635,57 m, genişliği 7,17 m’dir. Yirmi sekiz sivri kemerli göz ile geçilen köprüde kemer açıklıkları 4,50–11,86 m arasında değişmektedir. Bölümler arasındaki korkuluksuz aralıklar, taşkın sularının yapıya zarar vermeden akmasını sağlamak üzere tasarlanmıştır.
+
+Kesme taş ayaklar üzerine oturan sivri kemerler, korkuluk levhaları ve bölüm başlarındaki babalar Osmanlı köprü mimarisinin karakteristik öğeleridir. Bazı kesimlerde dinlenme sedirleri ile bir bölümde karşılıklı konumlandırılmış kitâbe köşkleri yer almaktadır. Bu köşklerdeki “amel-i Yûsuf b. Abdullah” ibaresi, eserin Mimar Sinan’a ait bilinen tek imzasını taşımaktadır.
+
+Büyükçekmece Köprüsü, ölçüsü, strüktürel sürekliliği ve araziyle kurduğu bütüncül ilişkiyle klasik dönem Osmanlı köprü mimarisinin anıtsal örneklerinden biridir.`,
+        placeImages: [
+            "mekanlar/kanuni-kopru.webp"
+        ],
+        films: [
+            {
+                title: "Ateş Parçası",
+                year: 1971,
+                note: "",
+                stills: [
+                    "assets/ates-parcasi/kanunikopru.jpeg"
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "sultanahmet_adliyesi",
+        name: "Sultanahmet Adliyesi (Eski Adliye)",
+        type: "Kültür Yapısı",
+        district: "Fatih (Sultanahmet)",
+        coords: {
+            lat: 41.00692531214452,
+            lon: 28.974390160815148
+        },
+        shortText:
+            "Erken Cumhuriyet döneminde inşa edilen Eski Adliye yapısı, Sultanahmet’in tarihî çevresi içinde uzun yıllar İstanbul’un merkez adliyesi olarak hizmet veren önemli bir kamu yapısıdır.",
+        description: `Sultanahmet’te yer alan Eski Adliye yapısı, Osmanlı Devleti’nin son döneminde şekillenmeye başlayan modern adalet yapıları anlayışının, erken Cumhuriyet dönemindeki mimari karşılıklarından biridir. Osmanlı döneminde Adliye Nezareti’nin hizmet verdiği Darülfünun Binası’nın 1933 yılında geçirdiği yangın sonrasında kullanılamaz hâle gelmesi üzerine İstanbul için yeni bir adliye binası inşa edilmesi gündeme gelmiştir.
+
+Yeni yapı, erken Cumhuriyet döneminde kamu yapılarında benimsenen mimari yarışma anlayışı doğrultusunda açılan yarışmalar sonucunda elde edilen proje ile inşa edilmiştir. Bu süreç, yapının yalnızca işlevsel değil, aynı zamanda temsil gücü yüksek bir kamu yapısı olarak ele alındığını göstermektedir.
+
+Yapı, plan ve kütle düzeninde simetriye dayalı bir kurguya sahiptir. Cephelerde ritmik pencere dizileri, belirgin kat silmeleri ve sade yüzeyler öne çıkarken, süsleme unsurları sınırlı tutulmuştur. Bu yalın ve düzenli mimari dil, erken Cumhuriyet kamu mimarlığında görülen anıtsallık ve kurumsal ifade anlayışıyla uyumludur. Sultanahmet’in tarihî çevresi içinde ölçek ve cephe düzeniyle dengeli bir konumlanan yapı, uzun yıllar İstanbul’un merkez adliyesi olarak hizmet vermiştir. Günümüzde ise erken Cumhuriyet dönemi adalet yapılarının mimari niteliklerini yansıtan önemli bir kamu yapısı olarak değerlendirilmektedir.`,
+        placeImages: [
+            "mekanlar/sultanahmet-adliyesi.png"
+        ],
+        films: [
+            { title: "Gençlik Hülyaları", year: 1962, note: "", stills: [] },
+            { title: "Ümitler Kırılınca", year: 1962, note: "", stills: [] },
+            { title: "Maceralar Kralı", year: 1963, note: "", stills: [] },
+            { title: "İstanbul 79", year: 1979, note: "", stills: [] }
+        ]
+    },
+
+    {
+        id: "avrupa_pasaji",
+        name: "Avrupa Pasajı (Aynalı Pasaj)",
+        type: "Kültür Yapısı",
+        district: "Beyoğlu",
+        coords: {
+            lat: 41.033920805052674,
+            lon: 28.97724527638664
+        },
+        shortText:
+            "19. yüzyıl Paris pasajlarını örnek alan, üstten aydınlatmalı plan şemasıyla Beyoğlu’nun en nitelikli pasaj yapılarından biridir.",
+        description: `Avrupa Pasajı, Beyoğlu’nda Meşrutiyet Caddesi ile Sahne Sokağı’nı (Balıkpazarı) birbirine bağlayan, İstanbul’daki pasaj tipolojisinin en belirgin ve bütüncül örneklerinden biridir. Paris’teki 19. yüzyıl pasajlarıyla büyük benzerlik gösteren yapı, mimari düzeni, iç mekân kurgusu ve üstten aydınlatmalı plan şemasıyla “pasaj” tanımına tam olarak uymaktadır.
+
+Yapının bulunduğu alanda, 1870 Büyük Pera Yangını öncesinde Jardin des Fleurs adlı müzikli bahçe yer almakta olup, yangın sonrası alan yeniden düzenlenmiştir. Bugünkü pasaj binası, Ermeni tüccar Onnik Düz tarafından Avusturyalı mimar Domenico Pulgher’e 1874 yılında yaptırılmıştır. Neoklasik üslupta tasarlanan yapı üç katlıdır. Zemin katta karşılıklı dizilmiş 22 dükkân bulunmakta, üst katlarda ise dükkânlardan bağımsız olarak düzenlenmiş odalar yer almakta ve bu mekânlara pasajın orta aksındaki merdivenlerle ulaşılmaktadır. Üst örtü, cam ve ferforje elemanlardan oluşan bir çatıyla sağlanmakta, doğal ışık iç mekâna bu yolla aktarılmaktadır.
+
+Cephelerde Malta taşı kullanılmış, zemin döşemesinde Trieste taşı tercih edilmiştir. Dükkân cepheleri zemine kadar camla kaplanmış, aralarına kemerli açıklıklar yerleştirilmiştir. Pasaj iç cephelerinde yer alan nişlerde, pişmiş topraktan yapılmış Neoklasik heykelcikler bulunmaktadır. Elektriğin henüz yaygın olmadığı dönemde iç mekân aydınlatması gaz lambalarıyla sağlanmış; ışığın artırılması amacıyla aynalar kullanılması nedeniyle yapı halk arasında “Aynalı Pasaj” adıyla anılmıştır.
+
+Zaman içinde çiçekçiler, terziler, saatçiler ve çeşitli zanaatkârların faaliyet gösterdiği pasaj, 1929 yılında Hazine’ye geçmiş; uzun süre bakımsız kaldıktan sonra 1990’lı yıllarda kapsamlı bir restorasyon sürecinden geçirilmiştir. Günümüzde antika ve turistik eşya satışı yapılan bir çarşı işleviyle kullanılmakta olup, Beyoğlu’nun geç Osmanlı ve erken Cumhuriyet dönemi ticaret ve kent yaşamını yansıtan nitelikli bir mimari miras örneği olarak varlığını sürdürmektedir.`,
+        placeImages: [
+            "mekanlar/avrupa-pasaji.png"
+        ],
+        films: [
+            {
+                title: "Erikler Çiçek Açtı",
+                year: 1968,
+                note: "",
+                stills: [
+                    "assets/erikler-cicek-acti/avrupa_pasaji.jpeg"
+                ]
+            }
+        ]
+    },
+
+    {
+        id: "bahcekoy_su_kemeri",
+        name: "Bahçeköy Su Kemeri",
+        type: "Kültür Yapısı",
+        district: "Sarıyer",
+        coords: {
+            lat: 41.17037526752989,
+            lon: 28.991250775169192
+        },
+        shortText:
+            "I. Mahmud döneminde (1731–1732) inşa edilen, Kırkçeşme Su Tesisleri’nin 18. yüzyıldaki önemli bir devamı niteliğindeki anıtsal su kemeri.",
+        description: `Bahçeköy Su Kemeri, İstanbul’un Sarıyer ilçesinde, Bahçeköy yerleşimi sınırları içinde yer alan ve Osmanlı dönemi su iletim sisteminin önemli bir bileşeni olan tarihî bir su kemeridir. Yapı, Beyoğlu, Galata, Beşiktaş ve Boğaziçi çevresinde artan su ihtiyacını karşılamak amacıyla I. Mahmud döneminde 1731–1732 yıllarında inşa edilmiştir.
+
+Kemer, Kanûnî Sultan Süleyman devrinde Mimar Sinan tarafından projelendirilen Kırkçeşme Su Tesisleri sisteminin 18. yüzyıldaki devamı ve geliştirilmesi kapsamında değerlendirilir. Bahçeköy ve çevresindeki derelerden toplanan suların isale hattına aktarılmasında, vadileri aşan taşıyıcı bir yapı işlevi görmüştür.
+
+Yaklaşık 400 m uzunluğunda, 11 m yüksekliğinde ve 3 m genişliğindeki yapı, çok gözlü taş kemer sistemiyle inşa edilmiştir. Toplam 21 kemer gözünden oluşan kemerde açıklıklar çoğunlukla 5–6 m arasında değişmektedir. En alçak kesimde dere yatağını aşmak üzere ikinci bir seviyede düzenlenen ek bir kemer gözü bulunmaktadır. Yapıda küfeki taşı kaplama ile moloz ve kesme taş örgünün birlikte kullanıldığı yığma inşa tekniği uygulanmıştır.
+
+Tarihî kaynaklarda kemerin üst bölümünde bir su haznesi ve küçük bir köşkün yer aldığı, ancak bu unsurların günümüze ulaşmadığı belirtilmektedir. Yapı, konumu ve ölçeğiyle Osmanlı döneminin büyük hidrolik yapıları arasında yer almakta olup, 18. yüzyıl su mimarisinin karakteristik özelliklerini yansıtmaktadır.`,
+        placeImages: [
+            "mekanlar/bahcekoy-su-kemeri.png"
+        ],
+        films: [
+            {
+                title: "Küçük Hanımın Şoförü",
+                year: 1962,
+                note: "",
+                stills: []
+            }
+        ]
+    },
+
+    {
+        id: "belgrad_ormani",
+        name: "Belgrad Ormanı",
+        type: "Meydan / Kamusal Alan",
+        district: "Sarıyer",
+        coords: {
+            lat: 41.1974,
+            lon: 28.9409
+        },
+        shortText:
+            "Bizans’tan Osmanlı’ya uzanan su yapılarıyla İstanbul’un tarihî altyapısında merkezi rol oynayan, geniş ölçekli doğal ve kültürel miras alanı.",
+        description: `Belgrad Ormanı, İstanbul’un Avrupa yakasında Sarıyer ilçesi sınırları içinde yer alan, kentin en önemli doğal ve tarihî orman alanıdır. Istranca Dağları’nın güneydoğu uzantıları üzerinde, Boğaziçi’ne doğru alçalan dalgalı bir peneplen üzerinde konumlanır. Yaklaşık 5.442 hektarlık alanı ile İstanbul’un en büyük yeşil alanlarından biridir.
+
+Ormanın İstanbul’a su sağlama işlevi Bizans dönemine kadar uzanır. Osmanlı döneminde ise özellikle Kanûnî Sultan Süleyman devrinde Mimar Sinan tarafından geliştirilen Kırkçeşme Su Tesisleri ile sistemli bir su toplama ve iletim alanı hâline gelmiştir. Orman içindeki derelerden toplanan sular, kemerler, maslaklar ve bentler aracılığıyla Haliç ve Beyoğlu çevresine ulaştırılmıştır.
+
+16. yüzyıl sonlarında su kaynaklarını korumak amacıyla orman özel bir statüye alınmış; 1575’te su nazırına bağlı bir koruma teşkilatı kurulmuştur. 18. yüzyılda inşa edilen Büyük Bent, Topuzlu Bent, Valide Bendi, Kirazlı Bent ve Karanlık Bent gibi yapılar, Osmanlı hidrolik mühendisliğinin anıtsal örnekleri olarak günümüze ulaşmıştır.
+
+Cumhuriyet döneminde de koruma statüsünü sürdüren Belgrad Ormanı, tarihî su yapılarıyla doğal peyzajın iç içe geçtiği, İstanbul’un hem ekolojik hem de kültürel belleğinde merkezi bir konuma sahip özgün bir miras alanıdır.`,
+        polygon: [
+            [
+                [41.230823943829584, 28.940980472882956],
+                [41.23066285409503, 28.94533833700706],
+                [41.23018113864171, 28.949654168633117],
+                [41.229383443666, 28.95388634251951],
+                [41.22827746279455, 28.957994043920316],
+                [41.22687386255183, 28.961937663832728],
+                [41.225186179045245, 28.965679182362045],
+                [41.22323068688593, 28.969182536438655],
+                [41.22102624163527, 28.97241396828546],
+                [41.21859409732618, 28.975342351235128],
+                [41.215957700850616, 28.97793948973244],
+                [41.21314246522951, 28.980180390623495],
+                [41.210175523983814, 28.982043503129294],
+                [41.2070854690067, 28.98351092522079],
+                [41.20390207449261, 28.984568574453366],
+                [41.200656009609254, 28.985206321676472],
+                [41.19737854270231, 28.98541808640445],
+                [41.19410123989799, 28.98520189301428],
+                [41.1908556610161, 28.984559887319783],
+                [41.18767305572559, 28.983498313457083],
+                [41.18458406286482, 28.982027451397965],
+                [41.18161841581172, 28.98016151578301],
+                [41.17880465672443, 28.977918517131823],
+                [41.176169862381606, 28.975320086839265],
+                [41.17373938423511, 28.97239126770238],
+                [41.17153660514725, 28.96916027203905],
+                [41.1695827151212, 28.96565820975451],
+                [41.16789650814925, 28.961918788983194],
+                [41.166494202100075, 28.957977992179195],
+                [41.16538928334592, 28.953873730746768],
+                [41.16459237759459, 28.94964548149261],
+                [41.16411114814328, 28.94533390834112],
+                [41.16395022251151, 28.940980472882956],
+                [41.16411114814328, 28.936627037424792],
+                [41.16459237759459, 28.9323154642733],
+                [41.16538928334592, 28.928087215019147],
+                [41.166494202100075, 28.92398295358672],
+                [41.16789650814925, 28.920042156782714],
+                [41.1695827151212, 28.916302736011406],
+                [41.17153660514725, 28.912800673726863],
+                [41.17373938423511, 28.90956967806353],
+                [41.176169862381606, 28.906640858926647],
+                [41.17880465672443, 28.904042428634092],
+                [41.18161841581172, 28.901799429982898],
+                [41.18458406286482, 28.899933494367954],
+                [41.18767305572559, 28.898462632308828],
+                [41.1908556610161, 28.897401058446135],
+                [41.19410123989799, 28.89675905275163],
+                [41.19737854270231, 28.89654285936146],
+                [41.200656009609254, 28.896754624089443],
+                [41.20390207449261, 28.897392371312545],
+                [41.2070854690067, 28.898450020545123],
+                [41.210175523983814, 28.899917442636614],
+                [41.21314246522951, 28.901780555142416],
+                [41.215957700850616, 28.904021456033476],
+                [41.21859409732618, 28.906618594530787],
+                [41.22102624163527, 28.909546977480456],
+                [41.22323068688593, 28.912778409327252],
+                [41.225186179045245, 28.91628176340387],
+                [41.22687386255183, 28.920023281933187],
+                [41.22827746279455, 28.923966901845596],
+                [41.229383443666, 28.928074603246408],
+                [41.23018113864171, 28.932306777132798],
+                [41.23066285409503, 28.936622608758853],
+                [41.230823943829584, 28.940980472882956]
+            ]
+
+
+        ],
+        placeImages: [
+            "mekanlar/belgrad.jpg"
+        ],
+        films: [
+            { title: "Senede Bir Gün", year: 1966, note: "", stills: [] },
+            { title: "Üçkâğıtçılar", year: 1976, note: "", stills: [] },
+            { title: "Akrep Yuvası", year: 1977, note: "", stills: [] }
+        ]
+    },
+
+    {
+        id: "atakoy_toplu_konutlari",
+        name: "Ataköy Toplu Konutları",
+        type: "Konut",
+        district: "Bakırköy / Ataköy",
+        shortText:
+            "Türkiye’de modern konut üretiminin erken ve bütüncül örneklerinden biri; planlama, mimari dil ve kamusal açık alan kurgusunu birlikte ele alan yerleşim modeli.",
+        description: `Ataköy Toplu Konutları, Türkiye’de modern konut üretiminin erken ve bütüncül örneklerinden biri olarak, planlama, mimari dil ve kamusal açık alan kurgusunu birlikte ele alan bir yerleşim modelini temsil eder. 1950’lerin sonlarından itibaren etaplar halinde geliştirilen yerleşme, çağdaş şehircilik ilkeleri doğrultusunda, konut, sosyal donatı ve yeşil alanların dengeli bir biçimde örgütlenmesine dayanmaktadır.
+
+Yerleşim planlarında yapı yoğunluğu kontrollü tutulmuş, bloklar arasındaki açıklıklar yaya dolaşımı ve ortak kullanım alanlarını destekleyecek şekilde tasarlanmıştır. Deniz yönelimi, hâkim rüzgârlar ve güneşlenme koşulları dikkate alınarak blokların konumlanışı belirlenmiş; özellikle sıra ve L tipi bloklar ile lineer ve kırıklı bir mekânsal düzen oluşturulmuştur. Araç yollarının çoğunlukla dış çeperden verilmesiyle iç alanlarda yaya öncelikli, güvenli ve süreklilik gösteren açık alanlar elde edilmiştir.
+
+Mimari dil, dönemin modernist yaklaşımını yansıtan yalın kütleler, tekrar eden modüler cephe düzenleri ve işlevi öne çıkaran plan şemalarıyla tanımlanır. Konut birimlerinde standartlaşma ve seri üretim anlayışı benimsenmiş; buna karşın yeşil alanlar, çarşı, okul ve ibadet yapılarıyla desteklenen sosyal donatılar, yerleşmenin kendi içinde bütüncül bir yaşam çevresi olarak işlemesini sağlamıştır.
+
+Bu yönleriyle Ataköy Toplu Konutları, yalnızca bir konut alanı değil, modern mimarlık ve planlama anlayışının İstanbul ölçeğinde uygulanmış önemli bir temsilidir.`,
+        placeImages: [
+            "mekanlar/atakoy-housing.jpg"
+        ],
+        films: [
+            {
+                title: "Pantolon Bankası", year: 1965, note: "", stills: [
+                    "assets/pantolon-bankasi/atakoy.jpeg"
+                ]
+            },
+            {
+                title: "Aşka Kinim Var", year: 1962, note: "", stills: [
+                    "assets/aska-kinim-var/atakoy-toplu-konut-2.jpeg",
+                    "assets/aska-kinim-var/atakoy-toplu-konut.jpeg"
+
+                ]
+            }
+        ],
+        // Leaflet polygon: [lat, lon]
+        polygon: [
+            [40.98302299639269, 28.855065542844866],
+            [40.98300776370242, 28.85465482353296],
+            [40.98296221235172, 28.85424806023715],
+            [40.98288678108719, 28.85384917085325],
+            [40.98278219645406, 28.85346199740439],
+            [40.98264946579541, 28.853090269021088],
+            [40.98248986754557, 28.85273756601075],
+            [40.982304938911795, 28.852407285363565],
+            [40.982096461062845, 28.85210260802734],
+            [40.98186644196748, 28.851826468266925],
+            [40.98161709704843, 28.851581525403486],
+            [40.981350827838476, 28.85137013820594],
+            [40.98107019884452, 28.851194342181078],
+            [40.98077791284267, 28.851055829980762],
+            [40.98047678484272, 28.850955935114637],
+            [40.980169714972845, 28.85089561912455],
+            [40.97985966054589, 28.85087546234359],
+            [40.97954960757642, 28.850895658328067],
+            [40.97924254202301, 28.850956012015107],
+            [40.97894142103263, 28.851055941622946],
+            [40.97864914446404, 28.85119448427462],
+            [40.97836852696456, 28.85137030529027],
+            [40.97810227086856, 28.851581711057644],
+            [40.977852940178984, 28.85182666535633],
+            [40.977622935881776, 28.85210280897796],
+            [40.97741447283099, 28.85240748245297],
+            [40.97722955842668, 28.85273775166491],
+            [40.9770699732908, 28.853090436105422],
+            [40.97693725412662, 28.853462139497935],
+            [40.97683267892677, 28.853849282495425],
+            [40.97675725467179, 28.854248137137628],
+            [40.97671170763756, 28.854654862736478],
+            [40.976696476404776, 28.855065542844866],
+            [40.97671170763756, 28.855476222953257],
+            [40.97675725467179, 28.855882948552107],
+            [40.97683267892677, 28.856281803194307],
+            [40.97693725412662, 28.8566689461918],
+            [40.9770699732908, 28.857040649584313],
+            [40.97722955842668, 28.857393334024824],
+            [40.97741447283099, 28.857723603236767],
+            [40.977622935881776, 28.858028276711774],
+            [40.977852940178984, 28.858304420333404],
+            [40.97810227086856, 28.85854937463209],
+            [40.97836852696456, 28.858760780399464],
+            [40.97864914446404, 28.858936601415113],
+            [40.97894142103263, 28.85907514406679],
+            [40.97924254202301, 28.859175073674628],
+            [40.97954960757642, 28.859235427361668],
+            [40.97985966054589, 28.85925562334614],
+            [40.980169714972845, 28.85923546656519],
+            [40.98047678484272, 28.859175150575098],
+            [40.98077791284267, 28.859075255708976],
+            [40.98107019884452, 28.858936743508657],
+            [40.981350827838476, 28.858760947483795],
+            [40.98161709704843, 28.858549560286253],
+            [40.98186644196748, 28.85830461742281],
+            [40.982096461062845, 28.85802847766239],
+            [40.982304938911795, 28.85772380032617],
+            [40.98248986754557, 28.857393519678986],
+            [40.98264946579541, 28.857040816668647],
+            [40.98278219645406, 28.856669088285344],
+            [40.98288678108719, 28.85628191483649],
+            [40.98296221235172, 28.855883025452584],
+            [40.98300776370242, 28.855476262156774],
+            [40.98302299639269, 28.855065542844866]
+        ]
+    },
+
+{
+  id: "tercuman_gazetesi_binasi",
+  name: "Tercüman Gazetesi Binası",
+  type: "Basın / Endüstri Yapısı",
+  district: "Zeytinburnu",
+  coords: {
+    lat: 41.01473597496741,
+    lon: 28.90975683270193
+  },
+  shortText:
+    "1970’lerin Yeni Brütalist dilini güçlü konsollar, servis kuleleri ve brüt beton yüzeylerle görünür kılan; matbaa, yönetim ve dağıtımı tek merkezde toplayan kurumsal yapı.",
+  description: `Tercüman Gazetesi Matbaa ve Yönetim Binası, 1974 yılında İstanbul Zeytinburnu’nda, D-100 karayolu üzerinde Tercüman Gazetesi için inşa edilmiştir. Yapının projesi, 1972’de açılan davetli mimari yarışma sonucunda Günay Çilingiroğlu ve Muhlis Tunca tarafından hazırlanmış; statik tasarımı Rasin Etiman tarafından gerçekleştirilmiştir. Bina, gazetenin matbaa, yönetim ve dağıtım işlevlerini tek bir merkezde toplamak amacıyla tasarlanmıştır.
+
+Yapı, 1970’li yıllar Türkiye mimarlığında Yeni Brütalist yaklaşımın dikkat çekici örneklerinden biridir. Program, alt katlarda matbaa ve teknik birimler, orta katlarda yazı işleri ve idari mekânlar, üst katlarda ise yönetim birimleri olacak şekilde kurgulanmıştır. Bu işlevsel ayrışma, kütlede yatay ve düşey geri çekilmeler ile belirgin konsol çıkmalarla okunur hâle getirilmiştir.
+
+Yaklaşık 15 m’ye varan konsollar ve bunları taşıyan sekiz adet servis kulesi yapının en karakteristik mimari unsurudur. Servis kuleleri hem taşıyıcı sistemi oluşturmakta hem de düşey sirkülasyon ve teknik hacimleri barındırmaktadır. Brüt beton yüzeyler, yatay pencere bantları ve strüktürün açıkça sergilenmesi, yapının mimari ifadesini tanımlar.
+
+Farklı dönemlerde çeşitli kurumlarca kullanılan yapı, 2010 yılında tescillenmiş; 2012’de tescili kaldırılmıştır. Deprem riski gerekçesiyle alınan karar doğrultusunda bina 4 Aralık 2023 tarihinde yıkılmıştır. Yapı, yıkımına kadar geçen süreçte Türkiye’de modern mimarlık ve yarışma yoluyla elde edilmiş kurumsal yapılar arasında önemli bir örnek olarak kabul edilmiştir.`,
+  geometry: {
+    type: "Feature",
+    properties: {},
+    geometry: {
+      type: "Point",
+      coordinates: [28.90975683270193, 41.01473597496741] // [lon, lat]
     }
+  },
+  placeImages: [
+    "mekanlar/Tercuman_Newspaper_building.jpg"
+  ],
+  films: [
+    { title: "İstasyon", year: 1977, note: "", stills: [] }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
