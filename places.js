@@ -1071,7 +1071,9 @@ Cephede kullanılan kristal ve alüminyum ağırlıklı modern malzeme dili, yap
             "mekanlar/vakko.png"
         ],
         films: [
-            { title: "Ah Nerede", year: 1975, note: "", stills: [] }
+            { title: "Ah Nerede", year: 1975, note: "", stills: [
+                "assets/ah-nerede-vakko.png"
+            ] }
         ]
     },
 
@@ -1139,7 +1141,9 @@ Ihlamur Kasrı, mimari diliyle geleneksel Osmanlı saray mimarisi ile Batılı �
                 title: "Senede Bir Gün",
                 year: 1966,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/senede-bir-gun-ihlamur.png"
+                ]
             }
         ]
     },
@@ -1496,25 +1500,35 @@ Osmanlı askerî-idarî yapısının geç dönemini temsil eden bu yapı, işlev
                 title: "Gençlik Hülyaları",
                 year: 1962,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/genclik-hulyalari/iurektorluk.jpeg"
+                ]
             },
             {
                 title: "Ümitler Kırılınca",
                 year: 1962,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/umitler-kirilinca/iu-rektorluk-anit.jpeg",
+                    "assets/umitler-kirilinca/iu-rektorluk-bina.jpeg"
+                ]
             },
             {
                 title: "Küçük Sevgilim",
                 year: 1971,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/kucuk-sevgilim/küçük sevgilim_iü amfi.jpeg",
+                    "assets/kucuk-sevgilim/küçük sevgilim_iü kapı.jpeg"
+                ]
             },
             {
                 title: "Azap",
                 year: 1973,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/Azap/beyazit.jpg"
+                ]
             }
         ]
     },
@@ -1578,25 +1592,33 @@ Günümüzde kullanılan Galata Köprüsü ise kazık temeller üzerine oturan, 
                 title: "Acı Hayat",
                 year: 1962,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/aci-hayat/galata-kop.png"
+                ]
             },
             {
                 title: "Gençlik Hülyaları",
                 year: 1962,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/genclik-hulyalari/galatakop.jpeg"
+                ]
             },
             {
                 title: "Küçük Hanımın Şoförü",
                 year: 1962,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/kucuk-hanimin-soforu/galata-kop.jpeg"
+                ]
             },
             {
                 title: "İstanbul 79",
                 year: 1979,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/istanbul79/istanbul79_galatakoprusu,.jpeg"
+                ]
             }
         ]
     },
@@ -1656,10 +1678,19 @@ Yapı, plan ve kütle düzeninde simetriye dayalı bir kurguya sahiptir. Cephele
             "mekanlar/sultanahmet-adliyesi.png"
         ],
         films: [
-            { title: "Gençlik Hülyaları", year: 1962, note: "", stills: [] },
-            { title: "Ümitler Kırılınca", year: 1962, note: "", stills: [] },
-            { title: "Maceralar Kralı", year: 1963, note: "", stills: [] },
-            { title: "İstanbul 79", year: 1979, note: "", stills: [] }
+            { title: "Gençlik Hülyaları", year: 1962, note: "", stills: [
+                "assets/genclik-hulyalari/adliye.jpeg",
+                "assets/genclik-hulyalari/adliyee.jpeg"
+            ] },
+            { title: "Ümitler Kırılınca", year: 1962, note: "", stills: [
+                "assets/umitler-kirilinca/sultanahmet-adliye.jpeg"
+            ] },
+            { title: "Maceralar Kralı", year: 1963, note: "", stills: [
+                "assets/maceralar-krali/adliye.jpg"
+            ] },
+            { title: "İstanbul 79", year: 1979, note: "", stills: [
+                "assets/istanbul79/istanbul79_sultanahmetadliyesarayi.jpeg"
+            ] }
         ]
     },
 
@@ -1722,7 +1753,9 @@ Tarihî kaynaklarda kemerin üst bölümünde bir su haznesi ve küçük bir kö
                 title: "Küçük Hanımın Şoförü",
                 year: 1962,
                 note: "",
-                stills: []
+                stills: [
+                    "assets/kucuk-hanimin-soforu/bahcekoy.jpeg"
+                ]
             }
         ]
     },
@@ -1820,7 +1853,9 @@ Cumhuriyet döneminde de koruma statüsünü sürdüren Belgrad Ormanı, tarihî
             "mekanlar/belgrad.jpg"
         ],
         films: [
-            { title: "Senede Bir Gün", year: 1966, note: "", stills: [] },
+            { title: "Senede Bir Gün", year: 1966, note: "", stills: [
+                "assets/senede-bir-gun-belgrad.png"
+            ] },
             { title: "Üçkâğıtçılar", year: 1976, note: "", stills: [] },
             { title: "Akrep Yuvası", year: 1977, note: "", stills: [] }
         ]
@@ -1957,7 +1992,9 @@ Farklı dönemlerde çeşitli kurumlarca kullanılan yapı, 2010 yılında tesci
             "mekanlar/Tercuman_Newspaper_building.jpg"
         ],
         films: [
-            { title: "İstasyon", year: 1977, note: "", stills: [] }
+            { title: "İstasyon", year: 1977, note: "", stills: [
+                "assets/istasyon/tercuman.png"
+            ] }
         ]
     }
 
